@@ -3,6 +3,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local('Montserrat Light'), local('Montserrat-Light'),
     url('../fonts/montserrat-light/montserrat-light.woff2') format('woff2'),
     url('../fonts/montserrat-light/montserrat-light.woff') format('woff'),
@@ -16,6 +17,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Montserrat'), local('Montserrat Regular'),
     local('Montserrat-Regular'),
     url('../fonts/montserrat-regular/montserrat-regular.woff2') format('woff2'),
@@ -30,6 +32,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local('Montserrat Medium'), local('Montserrat-Medium'),
     url('../fonts/montserrat-500/montserrat-500.woff2') format('woff2'),
     url('../fonts/montserrat-500/montserrat-500.woff') format('woff'),
@@ -43,6 +46,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
     url('../fonts/montserrat-600/montserrat-600.woff2') format('woff2'),
     url('../fonts/montserrat-600/montserrat-600.woff') format('woff'),
@@ -56,6 +60,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
     url('../fonts/montserrat-700/montserrat-700.woff2') format('woff2'),
     url('../fonts/montserrat-700/montserrat-700.woff') format('woff'),
@@ -69,6 +74,7 @@
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Times New Roman'), local('Times New Roman Regular'),
     local('Times-New-Roman-Regular'),
     url('../fonts/timesNewRoman-regular/timesNewRoman-regular.woff2')
@@ -86,6 +92,7 @@
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Times New Roman Bold'), local('Times-New-Roman-Bold'),
     url('../fonts/timesNewRoman-bold/timesNewRoman-bold.woff2') format('woff2'),
     url('../fonts/timesNewRoman-bold/timesNewRoman-bold.woff') format('woff'),
