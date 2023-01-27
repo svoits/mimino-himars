@@ -1,0 +1,63 @@
+.about-restaurant {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  background-color: $main-bg-color;
+}
+
+.about-restaurant-uppertitle {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $uppertitle-text-color;
+
+  margin-bottom: 12px;
+}
+
+.about-restaurant-subtitle {
+  font-family: 'Film P3';
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: $secondary-text-color;
+
+  margin-bottom: 12px;
+}
+
+.about-restaurant-description {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.002em;
+  color: $room-text-color;
+  width: 258px;
+  text-align: left;
+
+  margin-bottom: 28px;
+}
+
+.about-restaurant-img {
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  box-shadow: 2px 2px 60px 2px #00000040;
+}
+
+.about-restaurant-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.desc-color {
+  color: $accent-text-color;
+  width: 163px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.about-restaurant-img-position {
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  box-shadow: 2px 2px 60px 2px #00000040;
+}
