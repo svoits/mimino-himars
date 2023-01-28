@@ -1,0 +1,197 @@
+.details-hotel {
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+    background-color: $black;
+    background-image: linear-gradient($details-bg-color, $details-bg-color),
+                      url(../images/homepage/details-hotel/details-bg-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        &{
+         background-image: linear-gradient($details-bg-color, $details-bg-color),
+                           url(../images/homepage/details-hotel/details-bg-mobile@2x.jpg);
+        }
+    }
+
+    &-name{
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: calc(43/40);
+        color: $white;
+        letter-spacing: 0.3em;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+    }
+
+    &-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: calc(24/20);
+        color: $white;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    &-text{
+        font-size: 12px;
+        line-height: calc(15/12);
+        color: $details-text-color;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+    }
+
+// styles for slider
+
+// styles for slider
+
+&-booking-button{
+    display: block;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color:$main-accent-color;
+
+    padding: 14px 24px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+&-price-button{
+    display: block;
+    max-width:236px;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $main-accent-color;
+        
+    padding: 14px 37px;
+        
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+}
+
+@media screen and  (max-width:413px){
+    .details-hotel-name{
+        text-align: center;
+    }
+
+    .details-hotel-title{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:414px) {
+    .details-hotel-name{
+       margin-right: 115px;
+       text-align: end;
+    }
+
+    .details-hotel-title{
+       margin-right: 125px;
+       text-align: end;
+    }
+
+    .details-hotel-text{
+       margin-left: 30px;
+       max-width: 243px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .details-hotel{
+        padding-top: 48px;
+
+        background-image: linear-gradient($details-bg-color, $details-bg-color),
+                          url(../images/homepage/details-hotel/details-bg-tablet.jpg);
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: linear-gradient($details-bg-color, $details-bg-color),
+                              url(../images/homepage/details-hotel/details-bg-tablet@2x.jpg);
+            }
+        }
+
+    &-name{
+        font-size: 64px;
+        line-height: calc(69/64);
+
+        margin-right: 245px;
+        margin-bottom: 16px;
+    }
+
+    &-title{
+        font-size: 24px;
+        line-height: calc(29/24);
+
+        margin-right: 263px;
+        margin-bottom: 8px;
+    }
+
+    &-text{
+        font-size: 16px;
+        line-height: calc(20/16);
+
+        max-width: 549px;
+        margin-left: 150px;
+    }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .details-hotel {
+        background-image: linear-gradient($details-bg-color, $details-bg-color),
+                          url(../images/homepage/details-hotel/details-bg-desk.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: linear-gradient($details-bg-color, $details-bg-color),
+                              url(../images/homepage/details-hotel/details-bg-desk@2x.jpg);
+            }
+        }
+
+        &-name{
+            margin-right: 305px;
+        }
+
+        &-title{
+            margin-right: 323px;
+        }
+
+        &-text{
+            margin-left: 225px;
+            max-width: 595px;
+        }
+    }
+}
