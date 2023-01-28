@@ -115,10 +115,6 @@
             background: $white;
         }
 
-        &:disabled {
-            background: $black;
-            border: 2px solid $white;
-        }
     }
 
     &-btn.link {
