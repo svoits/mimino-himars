@@ -2,11 +2,19 @@
     padding: 32px 0;
     background: $secondary-bg-color;
 
+    @media screen and (min-width: 1024px) {
+        padding: 68px 0 40px;
+      }
+
     &-wrapper {
-        max-width: 300px;
+        max-width: 306px;
         display: inline-block;
         align-self: flex-end;
-        text-align: right;
+       
+        @media screen and (min-width: 1024px) {
+            min-width: 400px;
+            align-self: flex-start; 
+          }
     }
 
     &-subtitle {
@@ -15,8 +23,13 @@
         font-size: 20px;
         line-height: 1.15;
         color: $uppertitle-text-color;
+        text-align: right;
 
         margin-bottom: 8px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 32px;  
+        }
     }
 
     &-logo {
@@ -27,8 +40,13 @@
         letter-spacing: 0.3em;
         color: $secondary-text-color;
         text-transform: uppercase;
+        text-align: right;
         
         margin-bottom: 32px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 64px;  
+        }
     }
 
     &-title {
@@ -39,17 +57,24 @@
         letter-spacing: 0.05em;
         color: $black;
         text-transform: uppercase;
-        
-
         margin-bottom: 12px;
+
+        @media screen and (max-width: 340px) {
+            font-size: 6vw;
+          }
+
+        @media screen and (min-width: 1024px)  {
+            font-size: 30px;
+            line-height: 1.13;
+          }
     }
 
     &-description {
+        max-width: 245px;
         font-size: 12px;
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: $room-text-color;
-        text-align: left;
 
         margin-bottom: 32px;
     }
@@ -60,6 +85,10 @@
 
     .large-action-list {
         align-self: center;
+
+        // @media screen and (min-width: 1024px) {
+        //     justify-content: ; 
+        // }
     }
 
     &-gallery {
@@ -68,22 +97,32 @@
 
     &-btn {
         width: 236px;
-        height: 48px;
+        padding: 14px 37px;
        
         font-weight: 700;
         line-height: 1.25;
         letter-spacing: 0.02em;
+        text-align: center;
         color: $main-accent-color;
         background: #1a0d0d;
 
         border: 2px solid $accent-text-color;
         border-radius: 25px;
+
+        &:hover,
+        &:focus {
+            background: $white;
+        }
+
+        &:disabled {
+            background: $black;
+            border: 2px solid $white;
+        }
     }
 
     &-btn.link {
         font-family: inherit;
         display: block;
-        padding: 14px 37px;
     }
 
 }
@@ -91,6 +130,14 @@
 .container {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        // column-gap: 45px;
+        // row-gap: 48px;
+      }
 }
 
 .large-arrow-list {
@@ -98,4 +145,21 @@
     gap: 32;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.large-action-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .large-suite-photo {
+        min-width: 40%;
+    }
+
+    .suite-photo {
+        position: absolute;
+        top: -200px;
+        left: 112px;
+    }
+
 }
