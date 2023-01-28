@@ -1,0 +1,191 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Montserrat 300 */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/montserrat-light/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light/montserrat-light.ttf") format("truetype"), url("../fonts/montserrat-light/montserrat-light.eot") format("embedded-opentype");
+}
+/* Montserrat 400 */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat"), local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-regular/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular/montserrat-regular.woff") format("woff"), url("../fonts/montserrat-regular/montserrat-regular.ttf") format("truetype"), url("../fonts/montserrat-regular/montserrat-regular.eot") format("embedded-opentype");
+}
+/* Montserrat 500 */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-500/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500/montserrat-500.woff") format("woff"), url("../fonts/montserrat-500/montserrat-500.ttf") format("truetype"), url("../fonts/montserrat-500/montserrat-500.eot") format("embedded-opentype");
+}
+/* Montserrat 600  */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-600/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600/montserrat-600.woff") format("woff"), url("../fonts/montserrat-600/montserrat-600.ttf") format("truetype"), url("../fonts/montserrat-600/montserrat-600.eot") format("embedded-opentype");
+}
+/* Montserrat 700 */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-700/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700/montserrat-700.woff") format("woff"), url("../fonts/montserrat-700/montserrat-700.ttf") format("truetype"), url("../fonts/montserrat-700/montserrat-700.eot") format("embedded-opentype");
+}
+/* Times New Roman */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Times New Roman"), local("Times New Roman Regular"), local("Times-New-Roman-Regular"), url("../fonts/timesNewRoman-regular/timesNewRoman-regular.woff2") format("woff2"), url("../fonts/timesNewRoman-regular/timesNewRoman-regular.woff") format("woff"), url("../fonts/timesNewRoman-regular/timesNewRoman-regular.ttf") format("truetype"), url("../fonts/timesNewRoman-regular/timesNewRoman-regular.eot") format("embedded-opentype");
+}
+/* Times New Roman 700 */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Times New Roman Bold"), local("Times-New-Roman-Bold"), url("../fonts/timesNewRoman-bold/timesNewRoman-bold.woff2") format("woff2"), url("../fonts/timesNewRoman-bold/timesNewRoman-bold.woff") format("woff"), url("../fonts/timesNewRoman-bold/timesNewRoman-bold.ttf") format("truetype"), url("../fonts/timesNewRoman-bold/timesNewRoman-bold.eot") format("embedded-opentype");
+}
+/* Film P3*/
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local("Film P3 Bold"), local("Film-P3-Bold"), url("../fonts/filmP3-bold/filmP3-bold.woff2") format("woff2"), url("../fonts/filmP3-bold/filmP3-bold.woff") format("woff"), url("../fonts/filmP3-bold/filmP3-bold.ttf") format("truetype"), url("../fonts/filmP3-bold/filmP3-bold.eot") format("embedded-opentype");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ul */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* a */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* img */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 414px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.grand-suite {
+  background-color: #fffdee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.grand-suite .grand-suite-description {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #B4B4B4;
+  margin-bottom: 8px;
+}
+.grand-suite .grand-suite-mimino-title {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-bottom: 32px;
+}
+.grand-suite .grand-suite-title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.grand-suite .grand-suite-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+  margin-bottom: 32px;
+}
+.grand-suite .grand-suite-list {
+  gap: 16px;
+  margin-bottom: 72px;
+}
+.grand-suite .grand-suite-item {
+  margin-bottom: 32px;
+}/*# sourceMappingURL=index.css.map */

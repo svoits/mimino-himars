@@ -1,0 +1,85 @@
+.grand-suite {
+background-color: #fffdee;
+padding-top: 32px;
+padding-bottom: 32px;
+
+
+
+
+.grand-suite-description {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.15;
+	color: #B4B4B4;
+
+	margin-bottom: 8px;
+}
+
+.grand-suite-mimino-title {
+	font-family: 'Film P3';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.075;
+	letter-spacing: 0.3em;
+	color: #494848;
+
+	margin-bottom: 32px;
+}
+
+.grand-suite-title {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+	color: #000000;
+
+	margin-bottom: 12px;
+}
+
+.grand-suite-text {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	color: #7A7A7A;
+
+	
+	margin-bottom: 32px;
+	
+	display: block;
+	width: 258px;
+}
+
+
+
+.grand-suite-list {
+	// display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+gap: 16px;
+
+margin-bottom: 72px;
+}
+
+.grand-suite-item {
+
+
+
+margin-bottom: 32px;
+}
+
+.grand-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+}
