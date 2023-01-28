@@ -66,6 +66,10 @@
 // Tablet //
 @media screen and (min-width: 1024px) {
   .about-restaurant {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .about-restaurant .container {
     padding-top: 120px;
     padding-bottom: 32px;
     padding-left: 47px;
@@ -105,7 +109,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-22%, -13%);
+    transform: translate(-12%, -13%);
   }
 
   .about-restaurant-wrapper {
@@ -121,11 +125,10 @@
 }
 // Desktop//
 @media screen and (min-width: 1280px) {
-  .about-restaurant {
+  .about-restaurant .container {
     padding-bottom: 50px;
     padding-left: 85px;
     padding-right: 85px;
-    position: relative;
   }
 
   .about-restaurant-packaging {
@@ -134,7 +137,7 @@
   }
 
   .about-restaurant-description {
-    width: 512px;
+    width: 518px;
     text-align: left;
 
     margin-bottom: 162px;
@@ -144,7 +147,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-58%, -13%);
+    transform: translate(-9%, -13%);
   }
 
   .about-restaurant-wrapper {
