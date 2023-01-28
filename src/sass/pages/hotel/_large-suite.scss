@@ -1,0 +1,101 @@
+.large-suite {
+    padding: 32px 0;
+    background: $secondary-bg-color;
+
+    &-wrapper {
+        max-width: 300px;
+        display: inline-block;
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    &-subtitle {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: $uppertitle-text-color;
+
+        margin-bottom: 8px;
+    }
+
+    &-logo {
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: $secondary-text-color;
+        text-transform: uppercase;
+        
+        margin-bottom: 32px;
+    }
+
+    &-title {
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+        color: $black;
+        text-transform: uppercase;
+        
+
+        margin-bottom: 12px;
+    }
+
+    &-description {
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $room-text-color;
+        text-align: left;
+
+        margin-bottom: 32px;
+    }
+
+    &-photo {
+        margin-bottom: 32px;
+    }
+
+    .large-action-list {
+        align-self: center;
+    }
+
+    &-gallery {
+        align-self: flex-end;
+    }
+
+    &-btn {
+        width: 236px;
+        height: 48px;
+       
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-accent-color;
+        background: #1a0d0d;
+
+        border: 2px solid $accent-text-color;
+        border-radius: 25px;
+    }
+
+    &-btn.link {
+        font-family: inherit;
+        display: block;
+        padding: 14px 37px;
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.large-arrow-list {
+    display: flex;
+    gap: 32;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
