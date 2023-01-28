@@ -14,7 +14,7 @@
   margin-bottom: 12px;
 }
 
-.about-restaurant-subtitle {
+.about-restaurant-title {
   font-family: 'Film P3';
   font-weight: bold;
   font-size: 40px;
@@ -51,6 +51,7 @@
 .desc-color {
   color: $accent-text-color;
   width: 163px;
+
   margin-bottom: 0;
   margin-top: 70px;
 }
@@ -60,4 +61,93 @@
   margin-bottom: 32px;
 
   box-shadow: 2px 2px 60px 2px #00000040;
+}
+
+// Tablet //
+@media screen and (min-width: 1024px) {
+  .about-restaurant {
+    padding-top: 120px;
+    padding-bottom: 32px;
+    padding-left: 47px;
+
+    position: relative;
+  }
+
+  .about-restaurant-packaging {
+    display: flex;
+    gap: 26px;
+  }
+
+  .about-restaurant-uppertitle {
+    font-size: 20px;
+
+    margin-bottom: 4px;
+  }
+
+  .about-restaurant-title {
+    font-size: 64px;
+
+    margin-bottom: 24px;
+  }
+
+  .about-restaurant-description {
+    font-size: 16px;
+    width: 439px;
+    text-align: left;
+
+    margin-bottom: 142px;
+  }
+
+  .about-restaurant-img {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-22%, -13%);
+  }
+
+  .about-restaurant-wrapper {
+    gap: 48px;
+  }
+
+  .desc-color {
+    font-size: 16px;
+    width: 312px;
+
+    margin-top: 196px;
+  }
+}
+// Desktop//
+@media screen and (min-width: 1280px) {
+  .about-restaurant {
+    padding-bottom: 50px;
+    padding-left: 85px;
+    padding-right: 85px;
+    position: relative;
+  }
+
+  .about-restaurant-packaging {
+    display: flex;
+    gap: 37px;
+  }
+
+  .about-restaurant-description {
+    width: 512px;
+    text-align: left;
+
+    margin-bottom: 162px;
+  }
+
+  .about-restaurant-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-58%, -13%);
+  }
+
+  .about-restaurant-wrapper {
+    gap: 32px;
+  }
 }
