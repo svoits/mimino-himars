@@ -7,14 +7,13 @@
       }
 
     &-wrapper {
-        max-width: 306px;
-        display: inline-block;
+        // max-width: 306px;
         align-self: flex-end;
        
-        @media screen and (min-width: 1024px) {
-            min-width: 400px;
-            align-self: flex-start; 
-          }
+        // @media screen and (min-width: 1024px) {
+        //     min-height: 416px;
+        //     align-self: flex-start; 
+        //   }
     }
 
     &-subtitle {
@@ -67,6 +66,11 @@
             font-size: 30px;
             line-height: 1.13;
           }
+
+          @media screen and (min-width: 1280px)  {
+            font-size: 36px;
+            line-height: 1.14;
+          }
     }
 
     &-description {
@@ -77,22 +81,21 @@
         color: $room-text-color;
 
         margin-bottom: 32px;
-    }
 
-    &-photo {
-        margin-bottom: 32px;
+        @media screen and (min-width: 1024px)  {
+            max-width: 400px;
+        }
     }
 
     .large-action-list {
         align-self: center;
-
-        // @media screen and (min-width: 1024px) {
-        //     justify-content: ; 
-        // }
     }
 
     &-gallery {
+        display: flex;
+        gap: 40px;
         align-self: flex-end;
+        overflow: hidden;
     }
 
     &-btn {
@@ -127,17 +130,41 @@
 
 }
 
-.container {
+// .container {
+//     display: flex;
+//     flex-direction: column;
+
+//     @media screen and (min-width: 1024px) {
+//         position: relative;
+//         flex-direction: row-reverse;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+        
+//       }
+// }
+
+.content-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.content-item {
     display: flex;
     flex-direction: column;
 
     @media screen and (min-width: 1024px) {
-        position: relative;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
-        // column-gap: 45px;
-        // row-gap: 48px;
-      }
+        justify-content: space-between;
+                
+     }
+}
+
+.wrapper {
+    max-width: 306px;
+
+    @media screen and (min-width: 1024px) {
+        min-width: 400px;
+       
+    }
 }
 
 .large-arrow-list {
