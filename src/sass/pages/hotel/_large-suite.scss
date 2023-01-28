@@ -7,7 +7,7 @@
       }
 }
 
-    .large-suite {
+.large-suite {
     &-wrapper {
         @media screen and (min-width: 1024px) {
             min-height: 400px;
@@ -105,7 +105,7 @@
         letter-spacing: 0.02em;
         text-align: center;
         color: $main-accent-color;
-        background: #1a0d0d;
+        background: $black;
 
         border: 2px solid $accent-text-color;
         border-radius: 25px;
@@ -144,6 +144,7 @@
 }
 
 .wrapper {
+    min-width: 260px;
     max-width: 306px;
     
     align-self: flex-end;
