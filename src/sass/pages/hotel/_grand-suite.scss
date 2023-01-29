@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .grand-suite {
 background-color: $main-bg-color;
 padding-top: 32px;
@@ -15,10 +16,27 @@ padding-bottom: 32px;
 	color: $uppertitle-text-color;
 
 	margin-bottom: 8px;
+=======
+
+
+// <--___________SECTION_GRAND-SUITE__________-->
+.grand-suite {
+	display: flex;
+	background-color: #FFFDEE;
+}
+
+.grand-suite-description {
+	font-family: 'Times New Roman';
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.15;
+	color: #B4B4B4;
+>>>>>>> Stashed changes
 }
 
 .grand-suite-mimino-title {
 	font-family: 'Film P3';
+<<<<<<< Updated upstream
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
@@ -27,10 +45,18 @@ padding-bottom: 32px;
 	color:$secondary-text-color;
 
 	margin-bottom: 32px;
+=======
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 1.07;
+	letter-spacing: 0.3em;
+	color: #494848;
+>>>>>>> Stashed changes
 }
 
 .grand-suite-title {
 	font-family: 'Times New Roman';
+<<<<<<< Updated upstream
 	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
@@ -39,10 +65,18 @@ padding-bottom: 32px;
 	color: $black;
 
 	margin-bottom: 12px;
+=======
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.13;
+	letter-spacing: 0.05em;
+	color: #000000;
+>>>>>>> Stashed changes
 }
 
 .grand-suite-text {
 	font-family: 'Montserrat';
+<<<<<<< Updated upstream
 	font-style: normal;
 	font-weight: 600;
 	font-size: 12px;
@@ -120,3 +154,23 @@ gap: 16px;
 
 
 }
+=======
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	color: #7A7A7A;
+}
+
+.grand-suite-text {
+	display: flex;
+width: 400px;
+height: 83px;
+}
+
+.card {
+	display: flex;
+}
+
+// <!--___________IMAGE_GRAND-SUITE__________ -->
+>>>>>>> Stashed changes
