@@ -1,14 +1,12 @@
 var swiper = new Swiper('.ar-swiper', {
-  slidesPerView: 1.5,
+  slidesPerView: 1.25,
   spaceBetween: 25,
 
   loop: true,
   loopFillGroupWithBlank: true,
-
-  // cssMode: true,
   navigation: {
     nextEl: '.ar-swiper-right',
-    prevEl: '.ar-swiper-left',
+    prevEl: '.ar-swiper-lef',
   },
 
   breakpoints: {
@@ -20,18 +18,9 @@ var swiper = new Swiper('.ar-swiper', {
       slidesPerView: 2,
       spaceBetween: 40,
     },
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
   },
 });
-// var swiper = new Swiper('.ar-swiper', {
-//   //в лапках пишемо назву вашого контейнеру
-//   slidesPerView: 1.5, //кількість об'єктів що відображаються
-//   cssMode: true,
-//   navigation: {
-//     nextEl: '.ar-swiper-right', // в лапках ставимо клас об'єкта при на тисненні на який переключається слайд
-//     prevEl: '.ar-swiper-left',
-//   },
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   mousewheel: true, //прокрутка мишкою
-//   keyboard: true, //прокрутка клавою
-// });
