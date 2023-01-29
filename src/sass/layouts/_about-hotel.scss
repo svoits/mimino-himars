@@ -1,0 +1,216 @@
+// тимчасово !!!
+.hotel-slick {
+  outline: 1px solid blue;
+}
+.container {
+  outline: 1px solid tomato;
+  min-height: 100vh;
+}
+// ---------------- //
+
+.about-hotel.section {
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  background-color: $main-bg-color;
+}
+
+.about-hotel.container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 320px;
+}
+
+// ~~ ABOUT HOTEL TOP ~~ //
+
+.about-hotel-top {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    // position: absolute;
+    flex-direction: row-reverse;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.first-text {
+  margin-bottom: 6px;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: $uppertitle-text-color;
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.second-text {
+  margin-bottom: 16px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
+}
+
+.third-text {
+  max-width: 242px;
+
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $room-text-color;
+  @media screen and (min-width: 1024px) {
+    max-width: 419px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 488px;
+  }
+}
+
+.picture-wrapper-top {
+  max-width: 244px;
+
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1024px) {
+    max-width: 400px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 460px;
+  }
+}
+
+// ~~ ABOUT HOTEL BOTTOM ~~ //
+
+.about-hotel-bottom {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+    gap: 48px;
+  }
+}
+
+.bottom-text {
+  max-width: 163px;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $accent-text-color;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 312px;
+    font-size: 16px;
+  }
+}
+
+.picture-wrapper-bottom {
+  max-width: 200px;
+
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1024px) {
+    max-width: 350px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 460px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// ~~ SLICK ~~ //
+
+.about-hotel-slick {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  transform: translateX(-200px);
+  max-width: 530px;
+  //   padding-bottom: 20px;
+  //   padding-right: 69px;
+}
+
+.picture-wrapper-slider {
+  margin-left: 20px;
+  width: 245px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 194px;
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 254px;
+  }
+}
+
+// .pic-wrapper {
+//   width: 245px;
+// }
+
+// main button slick //
+
+.bnt-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.slick-prev {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.slick-next {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+// button slick //
+
+.slick-next:before {
+  //   display: none;
+  content: '→';
+  color: red;
+}
+
+.slick-prev:before {
+  //   display: none;
+  content: '←';
+  color: blue;
+}
