@@ -62,6 +62,35 @@
 
   box-shadow: 2px 2px 60px 2px #00000040;
 }
+// Swiper //
+.swiper-container {
+  display: flex;
+}
+.swiper-wrapper {
+  margin-bottom: 20px;
+  margin-left: 84px;
+  gap: 25px;
+}
+
+.swiper-slide {
+  max-width: 245px;
+  box-shadow: 2px 2px 60px 2px #00000040;
+}
+.swiper-slide:nth-child(2n) {
+  opacity: 60%;
+}
+
+.swiper-btn-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+}
+
+.swiper-btn-arrow {
+  background-color: transparent;
+  border: none;
+}
 
 // Tablet //
 @media screen and (min-width: 1024px) {
