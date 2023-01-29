@@ -88,6 +88,16 @@ padding-bottom: 32px;
 	// margin-bottom: 72px;
 }
 
+// ! ____BUTTON CAROUSEL______
+.button-carousel {
+}
+
+
+.btn-carousel {
+	
+	background-color: #000000;
+}
+
 // !__________BUTTONS GRAND-SUITE__________
 .btn-list {
 
@@ -124,6 +134,26 @@ padding-bottom: 32px;
 
 .card {
 	display: flex;
+}
+
+
+.button-carousel {
+	display: flex;
+	// width: 30px;
+	// right: 17px;
+	
+	
+}
+
+.btn-carousel-left {
+	margin-right: 34px;
+
+
+}
+
+.carousel-left {
+	width: 30px;
+	right: 17px;
 }
 
 }
