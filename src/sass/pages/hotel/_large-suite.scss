@@ -154,6 +154,12 @@
     }
 }
 
+.gallery-item>picture {
+    display: block;
+    width: 194px;
+    height: 194px;
+}
+
 .large-arrow-list {
     display: flex;
     gap: 32;
@@ -165,6 +171,12 @@
         justify-content: flex-start;
        
     }
+}
+
+.large-arrow-next,
+.large-arrow-prev {
+    border: none;
+    background: transparent;
 }
 
 .large-action-item:not(:last-child) {
@@ -182,3 +194,6 @@
     }
 }
 
+// .swiper-wrapper {
+//     gap: 40px;
+// }
