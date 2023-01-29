@@ -6,7 +6,7 @@
   min-width: 320px;
   padding-top: 16px;
   padding-bottom: 16px;
-
+  // background-color: #343434;
   @media screen and (max-width: 320px) {
     transform: translateX(-50vw);
   }
@@ -41,6 +41,9 @@
   }
   @media screen and (min-width: 1024px) {
     font-size: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 127px;
   }
 }
 
