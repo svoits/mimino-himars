@@ -53,8 +53,23 @@
     }
 
 // styles for slider
-&-swiper{
-    margin-bottom: 16px;
+.swiper{
+    margin-right: 25px;
+    margin-left: -15px;
+}
+.swiper-wrapper {
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    gap: 25px;
+}
+
+.swiper-slide {
+    max-width: 245px;
+    box-shadow: 2px 2px 60px 2px #00000040;
+}
+
+.swiper-slide:nth-child(2n) {
+    opacity: 60%;
 }
 
 // styles for switch buttons
