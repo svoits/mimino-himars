@@ -1,3 +1,5 @@
+
+
 <!--! ___________SECTION GRAND-SUITE__________ -->
 <section class="grand-suite">
   <div class="container">
@@ -10,10 +12,11 @@
       consequat sunt nostrud amet.
     </p>
 
-    <!--! ___________IMAGE GRAND-SUITE__________ -->
+    <!--! ___________IMAGES GRAND-SUITE__________ -->
     <ul class="grand-suite-list list">
-      <li class="grand-suite-item">
-        <img
+			<li class="grand-suite-item">
+				<div class="grand-suite-right">
+				<img
           class="image-grand-suite"
           src="./images/hotel/grand-suite/suite-desk.jpg"
           width="244"
@@ -21,8 +24,13 @@
           alt="modern-studio-apartment-design-with-bedroom-living-space"
         />
       </li>
+			</div>
+		
+			
 
-      <div class="grand-slide">
+			
+
+      <div class="grand-slide-left">
         <li class="grand-suite-item">
           <img
             class="image-grand-suite-gallery"
@@ -50,10 +58,39 @@
         <button class="grand-suite-btn btn" type="button">Детальніше</button>
       </li>
       <li class="grand-suite-item">
-        <button class="grand-suite-btn btn" type="button">
-          Переглянути ціни
-        </button>
+        <button class="grand-suite-btn btn" type="button">Переглянути ціни</button>
       </li>
     </ul>
   </div>
-</section>
+	</section>
+
+
+	<picture>
+		<!-- desktop -->
+		<source media="(min-width:1280px)" srcset="
+	          ./images/hotel/grand-suite/suite-desk.webp    1x,
+	          ./images/hotel/grand-suite/suite-desk@2x.webp 2x
+	        " type="image/webp" />
+		<source media="(min-width:1280px)" srcset="
+	          ./images/hotel/grand-suite/suite-desk.jpg    1x,
+	          ./images/hotel/grand-suite/suite-desk@2x.jpg 2x
+	        " type="image/jpg" />
+		<!-- tablet -->
+		<source media="(min-width:1024px)" srcset="
+	          ./images/hotel/grand-suite/suite-tablet.webp    1x,
+	          ./images/hotel/grand-suite/suite-tablet@2x.webp 2x
+	        " type="image/webp" />
+		<source media="(min-width:1024px)" srcset="
+	          ./images/hotel/grand-suite/suite-tablet.jpg    1x,
+	          ./images/hotel/grand-suite/suite-tablet@2x.jpg 2x
+	        " type="image/jpg" />
+		<!-- mobile -->
+		<source media="(min-width:320px)" srcset="
+	          ./images/hotel/grand-suite/suite-mobile.webp    1x,
+	          ./images/hotel/grand-suite/suite-mobile@2x.webp 2x
+	        " type="image/webp" />
+		<source media="(min-width:320px)" srcset="
+	          ./images/hotel/grand-suite/suite-mobile.jpg    1x,
+	          ./images/hotel/grand-suite/suite-mobile@2x.jpg 2x
+	        " type="image/jpg" />
+		</picture>

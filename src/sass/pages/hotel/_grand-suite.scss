@@ -1,5 +1,5 @@
 .grand-suite {
-background-color: #fffdee;
+background-color: $main-bg-color;
 padding-top: 32px;
 padding-bottom: 32px;
 
@@ -12,7 +12,7 @@ padding-bottom: 32px;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 1.15;
-	color: #B4B4B4;
+	color: $uppertitle-text-color;
 
 	margin-bottom: 8px;
 }
@@ -24,7 +24,7 @@ padding-bottom: 32px;
 	font-size: 40px;
 	line-height: 1.075;
 	letter-spacing: 0.3em;
-	color: #494848;
+	color:$secondary-text-color;
 
 	margin-bottom: 32px;
 }
@@ -36,7 +36,7 @@ padding-bottom: 32px;
 	font-size: 24px;
 	line-height: 1.16;
 	letter-spacing: 0.05em;
-	color: #000000;
+	color: $black;
 
 	margin-bottom: 12px;
 }
@@ -48,38 +48,82 @@ padding-bottom: 32px;
 	font-size: 12px;
 	line-height: 1.25;
 	letter-spacing: 0.02em;
-	color: #7A7A7A;
+	color: $room-text-color;
 
 	
 	margin-bottom: 32px;
-	
-	display: block;
+
+	display: inline-flex;
 	width: 258px;
 }
 
 
-
+//!___________IMAGES GRAND-SUITE__________
 .grand-suite-list {
-	// display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
 gap: 16px;
 
-margin-bottom: 72px;
 }
 
 .grand-suite-item {
-
-
-
-margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
-.grand-slide {
+.grand-suite-right {
+// 	display: flex;
+// 	justify-content: end;
+// align-items: flex-end;
+}
+
+
+.grand-slide-left {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	gap: 16px;
+
+	margin-bottom: 72px;
+}
+
+// !__________BUTTONS GRAND-SUITE__________
+.btn-list {
+
+}
+
+.grand-suite-item {
+	margin-bottom: 16px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 16px;
+
+	
 }
+
+.grand-suite-btn {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	color: $main-accent-color;
+	text-align: center;
+
+	width: 240px;
+	padding: 14px 37px;
+
+}
+
+.btn {
+	background-color: $black;
+	border: 2px solid $main-bg-color;
+	border-radius: 25px;
+
+	
+}
+
+
+
+
 
 }
