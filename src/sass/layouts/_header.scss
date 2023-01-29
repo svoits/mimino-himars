@@ -170,11 +170,9 @@
     display: flex;
   }
 }
+
 .header-soc-item {
   line-height: 0;
-}
-.soc-icon {
-  fill: currentColor;
 }
 
 .header-soc-link {
@@ -189,4 +187,8 @@
     color: $main-accent-color;
     transform: scale(1.2);
   }
+}
+
+.soc-icon {
+  fill: currentColor;
 }
