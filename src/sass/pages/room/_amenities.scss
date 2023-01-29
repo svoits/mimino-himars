@@ -1,0 +1,131 @@
+.amenities {
+  background-color: $main-bg-color;
+}
+
+.amenities-items {
+  list-style-type: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.amen-main-header {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-description {
+    width: 757px;
+  }
+
+  .paragraphs {
+    display: flex;
+    gap: 80px;
+  }
+
+  .paragraphs p {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .paragraphs {
+    gap: 159px;
+  }
+}
+
+.amen-sub-header {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  color: $black;
+  padding: 16px 0;
+}
+
+.amen-item p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $room-text-color;
+  padding-bottom: 16px;
+}
+
+.last-item p {
+  padding-bottom: 0;
+}
+
+.book-room-container {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.book-room {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-text-color;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.book-room-btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: $white;
+  background: $black;
+  border: 1px solid $main-accent-color;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities-items {
+    margin-top: 16px;
+  }
+
+  .book-room-btn {
+    width: 434px;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .book-room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 500px;
+    margin-top: 0;
+  }
+
+  .book-room {
+    padding-top: 32px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .book-room-container {
+    margin-left: 555px;
+  }
+}
+
+.right-arrow {
+  fill: $accent-text-color;
+}
