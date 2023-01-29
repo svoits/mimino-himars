@@ -6,6 +6,7 @@
   min-width: 320px;
   padding-top: 16px;
   padding-bottom: 16px;
+  //   background-color: #343434;
   @media screen and (max-width: 320px) {
     transform: translateX(-50vw);
   }
@@ -169,21 +170,23 @@
     display: flex;
   }
 }
-
+.header-soc-item {
+  line-height: 0;
+}
 .soc-icon {
-  fill: rgba(243, 198, 83, 0.7);
-  transition: fill $transition, transform $transition;
-  .hero-soc-link:hover &,
-  .hero-soc-link:focus &,
-  .header-soc-link:hover &,
-  .header-soc-link:focus & {
-    fill: $main-accent-color;
-    transform: scale(1.2);
-  }
+  fill: currentColor;
 }
 
 .header-soc-link {
   display: inline-flex;
-  padding-top: 9.5px;
-  padding-bottom: 9.5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  color: rgba(243, 198, 83, 0.7);
+  transition: color $transition, transform $transition;
+
+  &:hover,
+  &:focus {
+    color: $main-accent-color;
+    transform: scale(1.2);
+  }
 }
