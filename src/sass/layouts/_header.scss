@@ -5,7 +5,7 @@
   left: 50%;
   min-width: 320px;
   padding-top: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
   @media screen and (max-width: 320px) {
     transform: translateX(-50vw);
   }
@@ -115,6 +115,11 @@
   align-items: center;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
+  transition: border-color $transition;
+  &:hover,
+  &:focus {
+    border-color: $main-accent-color;
+  }
   @media screen and (max-width: 380px) {
     width: 5.8vw;
     padding: 1.25vw 0;
@@ -167,10 +172,22 @@
 
 .soc-icon {
   fill: rgba(243, 198, 83, 0.7);
+  transition: fill $transition, transform $transition;
+  .hero-soc-link:hover &,
+  .hero-soc-link:focus &,
+  .header-soc-link:hover &,
+  .header-soc-link:focus & {
+    fill: $main-accent-color;
+    transform: scale(1.2);
+  }
 }
 
 .header-soc-link {
   display: inline-flex;
   padding-top: 9.5px;
   padding-bottom: 9.5px;
+}
+
+body {
+  background-color: #343434;
 }
