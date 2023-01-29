@@ -2,7 +2,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: $secondary-bg-color;
-
+  color: $black;
   @media screen and (min-width: 1024px) {
     padding-top: 58px;
     padding-bottom: 40px;
@@ -15,12 +15,12 @@
 
 .menu-title {
   font-family: 'Times New Roman';
-  font-size: 32px;
+  font-size: 7.7vw;
   line-height: 1.15;
   margin-bottom: 32px;
 
-  @media screen and (max-width: 413.98px) {
-    font-size: 28px;
+  @media screen and (min-width: 414px) {
+    font-size: 32px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -41,9 +41,26 @@
   }
 }
 
+@media screen and (max-width: 1023.98px) {
+  .menu-first-column {
+    margin-bottom: 16px;
+  }
+}
+
+.menu-category {
+  margin-bottom: 16px;
+}
+
+.menu-category-d {
+  margin-bottom: 16px;
+  border-spacing: 0 8px;
+}
+
+// розкоментуй  display:flex;
+
 .dish-category {
   align-items: center;
-  display: flex;
+  //   display: flex;
   margin-bottom: 16px;
   margin-top: 16px;
   text-align: unset;
@@ -62,26 +79,26 @@
   }
 }
 
-@media screen and (max-width: 1023.98px) {
-  .dish-rank {
-    margin-bottom: 16px;
-  }
-}
+// розкоментуй  display:flex;
 
 .dish {
   align-items: center;
-  display: flex;
+  //   display: flex;
   text-align: unset;
+
+  @media screen and (min-width: 414px) {
+    width: 384px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 8px;
   }
 
-  @media screen and (min-width: 1280px) {
-    &:not(:last-child) {
-      margin-bottom: 12px;
-    }
-  }
+  //   @media screen and (min-width: 1280px) {
+  //     &:not(:last-child) {
+  //       margin-bottom: 12px;
+  //     }
+  //   }
 }
 
 .menu-category {
@@ -92,61 +109,70 @@
   text-align: left;
 }
 
+// розкоментуй  display: inline-block;
+
 .dish-title {
   margin-right: auto;
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-style: normal;
+  //   display: inline-block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
 
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 414px) {
+    max-width: 220px;
+  }
 }
 
 .dish-description {
+  max-width: 220px;
   margin-top: 4px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
+// за коментуй padding
+// розкоментуй  display: inline-block;
+
 .dish-weight {
-  display: inline-block;
+  //   display: inline-block;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 3.4vw;
   line-height: 1.21;
   white-space: nowrap;
-  margin-left: 32px;
+  //   margin-left: 32px;
   margin-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 50px;
 
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 413.98px) {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
   }
 }
 
+// розкоментуй  display: inline-block;
+
 .dish-price {
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-style: normal;
+  //   display: inline-block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 3.4vw;
   line-height: 1.21;
   white-space: nowrap;
+  max-width: 60px;
+  text-align: right;
 
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 413.98px) {
-    font-size: 12px;
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
   }
 }
 
@@ -174,10 +200,21 @@
 
   @media screen and (min-width: 1024px) {
     margin-right: 0;
-    margin-top: 64px;
+    margin-top: 41px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 48px;
   }
 }
+
+// menu
+
+// .reset-table th,
+// .reset-table td {
+//   padding: 0;
+// }
+
+// .reset-table {
+//   border-spacing: 0;
+// }
