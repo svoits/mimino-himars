@@ -1,11 +1,16 @@
 .amenities {
   background-color: $main-bg-color;
+  padding: 32px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities{
+    padding: 50px 0 40px;
+  }
 }
 
 .amenities-items {
-  list-style-type: none;
-  margin: 16px 0 0;
-  padding: 0;
+  margin-bottom: 32px;
 }
 
 .amen-main-header {
@@ -16,6 +21,10 @@
   line-height: 1.15;
   color: $black;
   margin-bottom: 16px;
+}
+
+.main-description{
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -46,7 +55,15 @@
   font-size: 24px;
   line-height: 1.16;
   color: $black;
-  padding: 16px 0;
+  padding-bottom: 16px;
+}
+
+.amen-item{
+  margin-bottom: 32px;
+}
+
+.first-child{
+  padding-bottom: 16px;
 }
 
 .amen-item p {
@@ -55,16 +72,16 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $room-text-color;
-  padding-bottom: 16px;
 }
 
-.last-item p {
-  padding-bottom: 0;
+.last-item {
+  margin-bottom: 0;
 }
 
-.book-room-container {
-  text-align: center;
-  margin-top: 32px;
+@media screen and (max-width: 1023px) {
+  .book-room-container {
+    text-align: center;
+  }
 }
 
 .book-room {
@@ -73,8 +90,10 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $accent-text-color;
-  text-decoration: none;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .book-room-btn {
@@ -92,9 +111,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .amenities-items {
-    margin-top: 16px;
-  }
+  .first-child{
+    padding: 0;
+}
 
   .book-room-btn {
     width: 434px;
@@ -102,21 +121,22 @@
     padding: 18px 0;
     font-size: 24px;
     line-height: 1.2;
+    margin-bottom: 32px;
   }
 
   .book-room-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 500px;
+    margin-left: 495px;
     margin-top: 0;
   }
 
   .book-room {
-    padding-top: 32px;
     margin: 0;
     font-size: 20px;
     line-height: 1.2;
+    gap: 16px;
   }
 }
 
