@@ -68,13 +68,33 @@
 }
 // Swiper //
 
-.swiper-wrapper {
-  margin-bottom: 20px;
+.ar-swiper {
   margin-left: 84px;
+  margin-bottom: 20px;
+  // margin-right: -15px;
+  // width: 330px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 521px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 632px;
+  }
 }
 
 .swiper-slide {
   max-width: 245px;
+  @media screen and (max-width: 1023.98px) {
+    opacity: 0.6;
+    transition: 250ms;
+  }
+}
+
+.swiper-slide-active {
+  @media screen and (max-width: 1023.98px) {
+    opacity: 1;
+    transition: 250ms;
+  }
 }
 
 @media screen and (min-width: 1024px) {
