@@ -244,10 +244,6 @@
   line-height: 0;
 }
 
-.soc-icon {
-  fill: currentColor;
-}
-
 .hero-soc-link {
   display: inline-flex;
   padding-top: 20px;
@@ -260,4 +256,8 @@
     color: $main-accent-color;
     transform: scale(1.2);
   }
+}
+
+.soc-icon {
+  fill: currentColor;
 }
