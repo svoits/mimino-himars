@@ -6,6 +6,7 @@ background-color: $main-bg-color;
 padding-top: 32px;
 padding-bottom: 32px;
 
+
 .grand-suite-description {
 	font-family: 'Times New Roman';
 	font-style: normal;
@@ -58,27 +59,33 @@ padding-bottom: 32px;
 
 
 //!___________IMAGES GRAND-SUITE__________
-.grand-suite-list {
-gap: 16px;
-
-}
-
-.grand-suite-item {
-	margin-bottom: 32px;
-}
-
-.grand-suite-right {
+.grand-suite-img {
 
 }
 
 
-.grand-slide-left {
-	display: flex;
-	justify-content:center;
-	align-items: center;
+// !_____Swiper_____
+.swiper-container {
+	
+}
+
+.swiper-wrapper {
+	
 	gap: 16px;
+	
+	
+}
 
-	margin-bottom: 72px;
+.grand-slide {
+	
+	
+	
+	// display: flex;
+	// justify-content:center;
+	// align-items: center;
+	// gap: 16px;
+
+	// margin-bottom: 72px;
 }
 
 // !__________BUTTONS GRAND-SUITE__________
