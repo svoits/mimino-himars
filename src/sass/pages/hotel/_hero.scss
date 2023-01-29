@@ -1,0 +1,34 @@
+.hero-hotel {
+  background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+    url(../images/hotel/hero-bg-mobile.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/hotel/hero-bg-mobile@2x.jpg);
+  }
+  @media screen and (min-width: 414px) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/hotel/hero-bg-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+        url(../images/hotel/hero-bg-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/hotel/hero-bg-desk.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+        url(../images/hotel/hero-bg-desk@2x.jpg);
+    }
+  }
+}
+
+.hero-hotel-subtitle {
+  font-size: 20px;
+}
