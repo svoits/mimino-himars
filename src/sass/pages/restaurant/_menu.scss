@@ -1,4 +1,5 @@
 .menu {
+  min-width: 320px;
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: $secondary-bg-color;
@@ -18,6 +19,10 @@
   font-size: 7.7vw;
   line-height: 1.15;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 319.98px) {
+    font-size: 24.64px;
+  }
 
   @media screen and (min-width: 414px) {
     font-size: 32px;
@@ -130,6 +135,10 @@
 
   letter-spacing: 0.02em;
 
+  @media screen and (max-width: 319.98px) {
+    font-size: 10.88px;
+  }
+
   @media screen and (min-width: 414px) {
     font-size: 14px;
   }
@@ -153,6 +162,10 @@
   max-width: 60px;
 
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 319.98px) {
+    font-size: 10.88px;
+  }
 
   @media screen and (min-width: 414px) {
     font-size: 14px;
