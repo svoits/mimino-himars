@@ -8,9 +8,21 @@
 }
 
 .large-suite {
+    
     &-wrapper {
+        min-width: 290px;
+        max-width: 306px;
+        align-self: flex-end;
+
         @media screen and (min-width: 1024px) {
+            min-width: 400px;
             min-height: 400px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            min-width: 463px;
+            min-height: 460px;
+            margin-right: 40px;
         }
     }
 
@@ -57,7 +69,7 @@
         margin-bottom: 12px;
 
         @media screen and (max-width: 340px) {
-            font-size: 6vw;
+            font-size: 7vw;
           }
 
         @media screen and (min-width: 1024px)  {
@@ -83,10 +95,6 @@
         @media screen and (min-width: 1024px)  {
             max-width: 400px;
         }
-    }
-
-    .large-action-list {
-        align-self: center;
     }
 
     &-gallery {
@@ -131,6 +139,7 @@
 .content-item {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     @media screen and (min-width: 1024px) {
         flex-direction: row-reverse;
@@ -150,7 +159,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        min-width: 478px;
+        min-width: 540px;
     }
 }
 
@@ -158,6 +167,13 @@
     display: block;
     width: 194px;
     height: 194px;
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+        height: 254px;
+    }
 }
 
 .large-arrow-list {
@@ -187,13 +203,17 @@
     @media screen and (min-width: 1024px) {
         position: absolute;
         top: -100px;
-        left: 112px;
+        left: 98px;
     }
-    @media screen and (min-width: 1280px) {
-        left: 180px;
-    }
+    
 }
 
-// .swiper-wrapper {
-//     gap: 40px;
-// }
+.large-action-list {
+    align-self: center;
+}
+
+.temp {
+    height: 300px;
+    background-color: orange;
+}
+
