@@ -1,320 +1,242 @@
 .details-restaurant {
-  padding-top: 24px;
-  padding-bottom: 40px;
-
-  overflow: hidden;
-
-  @media screen and (min-width: 1024px) {
-    padding-top: 40px;
-  }
-
-  &--background {
-    width: 100%;
-    max-width: 414px;
-    margin: 0 auto;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/homepage/details-restaurant/details-bg-mobile.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/details-restaurant/details-bg-mobile@2x.jpg);
-    }
-
-    @media screen and (min-width: 1024px) {
-      max-width: 1024px;
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/details-restaurant/details-bg-tablet.jpg);
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/homepage/details-restaurant/details-bg-tablet@2x.jpg);
-      }
-    }
-
-    @media screen and (min-width: 1280px) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/homepage/details-restaurant/details-bg-desk.jpg);
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/homepage/details-restaurant/details-bg-desk.jpg);
-      }
-    }
-  }
-
-  &__dis {
-    margin-left: 140px;
-    margin-bottom: 48px;
-
-    @media screen and (min-width: 1024px) {
-      margin-left: 278px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-left: 338px;
-      margin-bottom: 40px;
-    }
-  }
-
-  &__dis-title {
-    font-family: 'Film P3';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-
-    letter-spacing: 0.3em;
-    color: $white;
-
-    margin-bottom: 12px;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 64px;
-      margin-bottom: 16px;
-    }
-  }
-
-  &__dis-type {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-
-    letter-spacing: 0.02em;
-    color: $white;
-
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-  }
-
-  &__dis-p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-
-    letter-spacing: 0.02em;
-    color: $uppertitle-text-color;
-
-    max-width: 259px;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 16px;
-      max-width: 610px;
-    }
-  }
-
-  // btn-style
-
-  &__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    row-gap: 16px;
-
+    padding-top: 24px;
     padding-bottom: 40px;
 
-    @media screen and (min-width: 1024px) {
-      padding-bottom: 94px;
-    }
-  }
-
-  &__btn-item {
-    max-width: 236px;
-    width: 100%;
-
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 0.8;
-
-    color: $main-accent-color;
-    background-color: transparent;
-
-    padding: 14px 24px;
-
-    border: 2px solid $white;
-    border-radius: 25px;
+    overflow: hidden;
 
     @media screen and (min-width: 1024px) {
-      margin-left: 47px;
-      min-width: 236px;
-    }
-  }
-
-  &__swiper {
-    @media screen and (max-width: 1023.98px) {
-      width: 100%;
+        padding-top: 40px;
     }
 
-    @media screen and (min-width: 1024px) {
-      position: relative;
-      overflow: hidden;
+    &--background {
+        width: 100%;
+        max-width: 414px;
+        margin: 0 auto;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/details-restaurant/details-bg-mobile.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/details-restaurant/details-bg-mobile@2x.jpg);
+        }
+
+        @media screen and (min-width: 1024px) {
+            max-width: 1024px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/details-restaurant/details-bg-tablet.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(../images/homepage/details-restaurant/details-bg-tablet@2x.jpg);
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(../images/homepage/details-restaurant/details-bg-desk.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(../images/homepage/details-restaurant/details-bg-desk.jpg);
+            }
+        }
     }
-  }
 
-  &__swiper-container {
-    margin-left: 25px;
-    margin-bottom: 32px;
+    &__dis {
+        margin-left: 125px;
+        margin-bottom: 48px;
 
-    @media screen and (min-width: 1024px) {
-      margin-left: 265px;
-      margin-bottom: 0;
-      overflow: hidden;
+        @media screen and (min-width: 1024px) {
+            margin-left: 263px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 323px; 
+            margin-bottom: 40px;
+        }
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-left: 268px;
-    }
-  }
+    &__dis-title {
+        font-family: 'Film P3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
 
-  &__swiper-wrapper {
-    display: flex;
-    background-color: transparent;
-    margin-bottom: 16px;
+        letter-spacing: 0.3em;
+        color: $white;
 
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 24px;
-    }
-  }
+        margin-bottom: 12px;
 
-  &__swiper-slide {
-    margin-right: 20px;
-    object-fit: cover;
-
-    @media screen and (min-width: 1024px) {
-      margin-right: 34px;
+        @media screen and (min-width: 1024px) {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-right: 87px;
+    &__dis-type {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+
+        letter-spacing: 0.02em;
+        color: $white;
+
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
     }
-  }
 
-  &__swiper-img {
-    max-width: 274px;
+    &__dis-p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
 
-    @media screen and (min-width: 1024px) {
-      max-width: 270px;
+        letter-spacing: 0.02em;
+        color: $uppertitle-text-color;
+
+        max-width: 259px;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 16px;
+            max-width: 610px;
+        }
     }
-  }
 
-  &__swiper-btn {
-    margin-top: 16px;
-    display: flex;
-    column-gap: 32px;
-    fill: $white;
-
-    margin-bottom: 32px;
-
-    @media screen and (min-width: 1024px) {
-      margin-top: 24px;
+    &__flexbox{
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+        }
     }
-  }
+
+    // btn-style
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        row-gap: 16px;
+
+        padding-bottom: 40px;
+
+        @media screen and (min-width: 1024px) {
+            padding-bottom: 94px;
+        }
+    }
+
+    &__btn-item {
+        max-width: 236px;
+        width: 100%;
+
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 0.8;
+
+        color: $main-accent-color;
+        background-color: transparent;
+
+        padding: 14px 24px;
+
+        border: 2px solid $white;
+        border-radius: 25px;
+
+        @media screen and (min-width: 1024px) {
+            margin-left:  32px;
+            min-width: 236px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-left: 70px;
+        }
+    }
+
+    &__swiper {
+        @media screen and (max-width: 1023.98px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    &__swiper-container {
+        margin-left: 25px;
+        margin-bottom: 32px;
+        width: 375px;
+
+        @media screen and (min-width: 1024px) {
+            width: 662px;
+            margin-left: 30px;
+            margin-bottom: 0; 
+            overflow: hidden;
+        }
+
+        @media screen and (min-width: 1280px) { 
+            width: 875px;
+            margin-left: 32px;
+        }
+    }
+
+    &__swiper-wrapper {
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__swiper-slide {
+        object-fit: cover;
+    }
+
+    &__swiper-img {
+        max-width: 274px;
+    }
+
+    
+    &__swiper-btn {
+        margin-top: 16px;
+        display: flex;
+        column-gap: 32px;
+        fill: $white;
+
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 24px;
+        }
+    }
 }
 
-// .details-restaurant__swiper {
-//     margin-left: 40px;
-// }
-
-// @media screen and (max-width: 1023.98px) {
-//     .details-restaurant__swiper {
-//         width: 100%;
-//     }
-// }
-
-// .details-restaurant__swiper-btn {
-//     margin-top: 16px;
-//     display: flex;
-//     column-gap: 32px;
-//     fill: $white;
-
-//     margin-bottom: 32px;
-// }
-
-// @media screen and (min-width: 1024px) {
-//     .details-restaurant__swiper-btn {
-//         margin-top: 24px;
-//         margin-bottom: 40px;
-//     }
-// }
-
-// @media screen and (min-width: 1024px) {
-//     .details-restaurant__swiper {
-//         margin-left: 0;
-//     }
-
-//     .details-restaurant__flexbox {
-//         display: flex;
-//         flex-direction: row-reverse;
-//         align-items: flex-end;
-//         gap: 28px;
-//     }
-
-//     .details-restaurant__swiper-container {
-//         width: 60vw;
-//         margin-right: 0;
-//     }
-// }
-
-// @media screen and (min-width: 1280px) {
-
-//     .details-restaurant__swiper-container {
-//         width: 59vw;
-//         max-width: 890px;
-//     }
-
-//     .details-restaurant__swiper-slide {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//     }
-// }
-
-// @media screen and (max-width: 1023.98px) {
-//     .details-restaurant__swiper-slide {
-//         opacity: 0.65;
-//         transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-//         &.swiper-slide-active {
-//             opacity: 1;
-//         }
-//     }
-// }
-
-.swiper-slide{
+.swiper-slide {
     width: auto !important;
 }
