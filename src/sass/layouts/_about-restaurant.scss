@@ -2,6 +2,17 @@
   padding-top: 16px;
   padding-bottom: 20px;
   background-color: $main-bg-color;
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 262px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 225px;
+  }
+}
+
+.about-restaurant .container {
+  position: relative;
 }
 
 .about-restaurant-uppertitle {
@@ -65,31 +76,44 @@
   margin-bottom: 32px;
 
   box-shadow: 2px 2px 60px 2px #00000040;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
 }
 
 // Swiper //
 
 .ar-swiper {
-  margin-left: 84px;
-  margin-bottom: 20px;
-  transform: translateX(15px);
+  max-width: 330px;
+  // margin-left: 84px;
+  // margin-left: auto;
+  margin-right: -15px;
+  // margin-bottom: 20px;
+  // transform: translateX(15px);
 
   @media screen and (min-width: 1024px) {
-    margin-left: 500px;
+    position: absolute;
+    right: 28px;
+    bottom: -230px;
 
-    transform: translateY(-20%);
+    max-width: none;
     width: 428px;
+
+    margin-right: 0;
+
+    // transform: translateY(-20%);
+    transform: translateY(-28px);
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 563px;
     width: 548px;
     transform: translateY(-45%);
   }
 }
 
 .swiper-slide {
-  min-width: 245px;
+  // min-width: 245px;
+  width: auto !important;
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
     transition: 250ms;
@@ -115,26 +139,22 @@
   }
 }
 .swiper-btn-wrapper {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   margin-top: 20px;
   display: flex;
   justify-content: end;
   gap: 32px;
   cursor: pointer;
   transform: translateX(-15);
-}
 
-@media screen and (min-width: 1024px) {
-  .swiper-btn-wrapper {
+  @media screen and (min-width: 1024px) {
     margin-top: 32px;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .swiper-btn-wrapper {
+  @media screen and (min-width: 1280px) {
     margin-top: 36px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 }
 
@@ -142,20 +162,22 @@
   background-color: transparent;
   border: none;
   padding: 0;
+
+  line-height: 0;
 }
 
 // Tablet //
 @media screen and (min-width: 1024px) {
-  .about-restaurant {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .about-restaurant .container {
-    padding-top: 120px;
-    padding-bottom: 32px;
+  // .about-restaurant {
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
+  // .about-restaurant .container {
+  //   padding-top: 120px;
+  //   padding-bottom: 32px;
 
-    position: relative;
-  }
+  //   position: relative;
+  // }
 
   .about-restaurant-packaging {
     display: flex;
