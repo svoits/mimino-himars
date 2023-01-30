@@ -3,10 +3,12 @@ var swiper = new Swiper('.ar-swiper', {
   spaceBetween: 25,
 
   loop: true,
+  loopedSlides: 4,
   loopFillGroupWithBlank: true,
+
   navigation: {
-    nextEl: '.ar-swiper-right',
-    prevEl: '.ar-swiper-lef',
+    nextEl: '.ar-swiper-prew',
+    prevEl: '.ar-swiper-next',
   },
 
   breakpoints: {
