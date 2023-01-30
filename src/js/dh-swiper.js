@@ -14,10 +14,11 @@ var swiper = new Swiper(".dh-swiper", {
   slidesPerView: 1.5,
   // cssMode: true,
   // swiperProgress: 0.5,
-  inverse: true;
+      calculateHeight:true,
       spaceBetween: 30,
       loop: true,
-      loopFillGroupWithBlank: true,
+  loopFillGroupWithBlank: true,
+      setWrapperSize: true,
       // reverseDirection: true,
       variableWidth: true,
       navigation: {
@@ -31,13 +32,13 @@ var swiper = new Swiper(".dh-swiper", {
   breakpoints: {
     // when window width is >= 414px
     414: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.6,
       spaceBetween: 20
     },
     // when window width is >= 1024px
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 88
     },
   }
     });
