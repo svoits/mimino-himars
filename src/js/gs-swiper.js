@@ -1,6 +1,6 @@
 var swiper = new Swiper('.ar-swiper', {
   slidesPerView: 1.25,
-  spaceBetween: 25,
+  spaceBetween: 16,
 
   loop: true,
   loopFillGroupWithBlank: true,
@@ -12,7 +12,7 @@ var swiper = new Swiper('.ar-swiper', {
   breakpoints: {
     414: {
       slidesPerView: 1.25,
-      spaceBetween: 25,
+      spaceBetween: 16,
     },
     1024: {
       slidesPerView: 2,
