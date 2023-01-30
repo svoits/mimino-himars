@@ -1,6 +1,6 @@
 var swiper = new Swiper('.about-hotel-swiper', {
-  slidesPerView: 1.3,
-  spaceBetween: 20,
+  slidesPerView: 1.35,
+  spaceBetween: 10,
 
   loop: true,
   loopFillGroupWithBlank: true,
@@ -11,8 +11,8 @@ var swiper = new Swiper('.about-hotel-swiper', {
   },
 
   breakpoints: {
-    414: {
-      slidesPerView: 1.3,
+    360: {
+      slidesPerView: 1.32,
       spaceBetween: 20,
     },
     1024: {
