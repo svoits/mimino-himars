@@ -1,0 +1,224 @@
+.details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/homepage/details-restaurant/details-bg-mobile@2x.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details-restaurant/details-bg-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .details-restaurant {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/homepage/details-restaurant/details-bg-desk@2x.jpg);
+    }
+}
+
+.details-restaurant-dis {
+    padding-top: 24px;
+    margin-left: 140px;
+    margin-bottom: 48px;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-dis {
+        padding-top: 48px;
+        margin-left: 278px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .details-restaurant-dis {
+        margin-left: 338px;
+        }
+}
+
+
+.details-restaurant-dis-title {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+
+    letter-spacing: 0.3em;
+    color: $white;
+
+    margin-bottom: 12px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-dis-title {
+        font-size: 64px;
+
+        margin-bottom: 16px;
+    }
+}
+
+.details-restaurant-dis-type {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: $white;
+
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-dis-type {
+        font-size: 24px;
+
+        margin-bottom: 8px;
+    }
+}
+
+.details-restaurant-dis-p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+
+    letter-spacing: 0.02em;
+    color: $uppertitle-text-color;
+
+    max-width: 259px;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-dis-p {
+        font-size: 16px;
+
+        max-width: 610px;
+    }
+}
+
+.details-restaurant-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 16px;
+
+    padding-bottom: 40px;
+}
+
+.details-restaurant-btn-item{
+    max-width: 236px;
+    width: 100%;
+}
+.details-restaurant-btn-item{
+    max-width: 236px;
+    width: 100%;
+}
+
+
+.details-restaurant-btn-item {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.8;
+
+    color: $main-accent-color;
+    background-color: transparent;
+
+    padding: 14px 24px;
+
+    border: 2px solid $white;
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-btn {
+        padding-bottom: 94px;
+    }
+
+    .details-restaurant-btn-item {
+        margin-left: 47px;
+        min-width: 236px;
+    }
+}
+
+.details-restaurant-swiper{
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .details-restaurant-swiper{
+        width: 100%;
+    }
+}
+
+.details-restaurant-swiper-btn{
+    margin-top: 16px;
+    display: flex;
+    column-gap: 32px;
+    fill: $white;
+
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-swiper-btn {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .details-restaurant-swiper {
+        margin-left: 0;
+    }
+
+    .details-restaurant-flexbox{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 28px;
+    }
+
+    .details-restaurant-swiper-container {
+        width: 60vw;
+        margin-right: 0;
+    }
+} 
+
+@media screen and (min-width: 1280px) {
+
+    .details-restaurant-swiper-container {
+        width: 59vw;
+        max-width: 890px;
+    }
+
+        .details-restaurant-swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 1023.98px) {
+.details-restaurant-swiper-slide{
+    opacity: 0.65;
+    transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    &.swiper-slide-active{
+        opacity: 1;
+    }
+}
+}
