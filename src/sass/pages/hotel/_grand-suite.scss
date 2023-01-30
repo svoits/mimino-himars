@@ -1,16 +1,7 @@
 
 
 
-.large-suite {
-	padding: 32px 0;
-	background: $secondary-bg-color;
-
-	@media screen and (min-width: 1024px) {
-		padding: 68px 0 40px;
-	}
-}
-
-.large-suite {
+.grand-suite {
 	&-wrapper {
 		@media screen and (min-width: 1024px) {
 			min-height: 400px;
@@ -88,7 +79,7 @@
 		}
 	}
 
-	.large-action-list {
+	.grand-action-list {
 		align-self: center;
 	}
 
@@ -163,7 +154,7 @@
 	height: 194px;
 }
 
-.large-arrow-list {
+.grand-arrow-list {
 	display: flex;
 	gap: 32;
 	margin-top: 20px;
@@ -176,13 +167,13 @@
 	}
 }
 
-.large-arrow-next,
-.large-arrow-prev {
+.grand-arrow-next,
+.grand-arrow-prev {
 	border: none;
 	background: transparent;
 }
 
-.large-action-item:not(:last-child) {
+.grand-action-item:not(:last-child) {
 	margin-bottom: 16px;
 }
 
@@ -196,205 +187,14 @@
 	@media screen and (min-width: 1280px) {
 		left: 180px;
 	}
+
+
+
+
+
+		
 }
 
-// .swiper-wrapper {
-//     gap: 40px;
-// }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ___________SECTION GRAND-SUITE__________
-// .grand-suite {
-// background-color: $main-bg-color;
-// padding-top: 32px;
-// padding-bottom: 32px;
-
-
-// .grand-suite-description {
-// 	font-family: 'Times New Roman';
-// 	font-style: normal;
-// 	font-weight: 400;
-// 	font-size: 20px;
-// 	line-height: 1.15;
-// 	color: $uppertitle-text-color;
-
-// 	margin-bottom: 8px;
-// }
-
-// .grand-suite-mimino-title {
-// 	font-family: 'Film P3';
-// 	font-style: normal;
-// 	font-weight: 700;
-// 	font-size: 40px;
-// 	line-height: 1.075;
-// 	letter-spacing: 0.3em;
-// 	color:$secondary-text-color;
-
-// 	margin-bottom: 32px;
-// }
-
-// .grand-suite-title {
-// 	font-family: 'Times New Roman';
-// 	font-style: normal;
-// 	font-weight: 700;
-// 	font-size: 24px;
-// 	line-height: 1.16;
-// 	letter-spacing: 0.05em;
-// 	color: $black;
-
-// 	margin-bottom: 12px;
-// }
-
-// .grand-suite-text {
-// 	font-family: 'Montserrat';
-// 	font-style: normal;
-// 	font-weight: 600;
-// 	font-size: 12px;
-// 	line-height: 1.25;
-// 	letter-spacing: 0.02em;
-// 	color: $room-text-color;
-	
-// 	margin-bottom: 32px;
-
-// 	display: inline-flex;
-// 	width: 258px;
-// }
-
-
-// ___________IMAGES GRAND-SUITE__________
-// .grand-suite-img {
-
-// }
-
-
-// _____Swiper_____
-// .swiper-container {
-	
-// }
-
-// .swiper-wrapper {
-	
-// 	gap: 16px;
-	
-	
-// }
-
-// .grand-slide {
-	
-	
-	
-	// display: flex;
-	// justify-content:center;
-	// align-items: center;
-	// gap: 16px;
-
-	// margin-bottom: 72px;
-// }
-
-//  ____BUTTON CAROUSEL______
-// .button-carousel {
-// }
-
-
-// .btn-carousel {
-	
-// 	background-color: #000000;
-// }
-
-// __________BUTTONS GRAND-SUITE__________
-// .btn-list {
-
-// }
-
-// .grand-suite-item {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-
-// 	margin-bottom: 16px;
-// }
-
-// .grand-suite-btn {
-// 	font-family: 'Montserrat';
-// 	font-style: normal;
-// 	font-weight: 700;
-// 	font-size: 16px;
-// 	line-height: 20px;
-// 	letter-spacing: 0.02em;
-// 	color: $main-accent-color;
-// 	text-align: center;
-
-// 	width: 240px;
-// 	padding: 14px 37px;
-
-// }
-
-// .btn {
-// 	background-color: $black;
-// 	border: 2px solid $main-bg-color;
-// 	border-radius: 25px;
-// }
-
-// .card {
-// 	display: flex;
-// }
-
-
-// .button-carousel {
-// 	display: flex;
-	// width: 30px;
-	// right: 17px;
-	
-	
-// }
-
-// .btn-carousel-left {
-// 	margin-right: 34px;
-
-
-// }
-
-// .carousel-left {
-// 	width: 30px;
-// 	right: 17px;
-// }
-
-// }
