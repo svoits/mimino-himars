@@ -1,13 +1,14 @@
 /* Footer */
 .footer {
   background-color: $footer-bg-color;
+  min-width: 320px;
 }
 .footer__box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-width: 320px;
+
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -23,10 +24,14 @@
   }
 }
 .footer__bottom {
-  margin-right: 85px;
+  margin-left: 9%;
   width: 127px;
   height: 43px;
+  @media screen and (max-width: 330px) {
+    margin-left: 5%;
+  }
   @media screen and (min-width: 1024px) {
+    margin-left: 0;
     display: flex;
     align-items: center;
     margin-right: 163px;
