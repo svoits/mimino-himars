@@ -12,9 +12,7 @@
     padding-bottom: 225px;
   }
 }
-.container {
-  outline: solid 1px red;
-}
+
 .about-restaurant .container {
   position: relative;
 }
@@ -28,7 +26,7 @@
   margin-bottom: 12px;
 
   @media screen and (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 4px;
   }
 }
@@ -48,21 +46,9 @@
   }
 }
 
-// .about-restaurant-packaging {
-//   @media screen and (min-width: 1024px) {
-//     display: flex;
-//     gap: 26px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     display: flex;
-//     gap: 37px;
-//   }
-// }
-
 .about-restaurant-description {
   font-size: 12px;
-  line-height: 1.22;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: $room-text-color;
   width: 258px;
@@ -124,7 +110,6 @@
 
   @media screen and (min-width: 1024px) {
     width: 312px;
-    font-size: 16px;
     margin-top: 194px;
     margin-bottom: 0;
   }
@@ -139,30 +124,6 @@
     margin-bottom: 0;
   }
 }
-
-// Swiper //
-
-// .ar-swiper {
-//   max-width: 330px;
-//   margin-right: -15px;
-
-//   @media screen and (min-width: 1024px) {
-//     position: absolute;
-//     right: 15px;
-//     bottom: -230px;
-
-//     max-width: none;
-//     width: 428px;
-//     margin-right: 0;
-//     // transform: translateY(-28px);
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 548px;
-//     bottom: -175px;
-//     // transform: translateY(-45%);
-//   }
-// }
 
 // ~~ SWIPER ~~ //
 
@@ -188,13 +149,6 @@
   }
 }
 
-// .swiper-slide img {
-// display: block;
-// width: 245px;
-// height: 100%;
-// object-fit: cover;
-// }
-
 .swiper-slide {
   width: auto !important;
 
@@ -210,29 +164,6 @@
     transition: 250ms;
   }
 }
-
-// .swiper-slide {
-//   width: auto !important;
-//   @media screen and (max-width: 1023.98px) {
-//     opacity: 0.6;
-//     transition: 250ms;
-//   }
-
-//   @media screen and (min-width: 1024px) {
-//     min-width: 194px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     min-width: 254px;
-//   }
-// }
-
-// .swiper-slide-active {
-//   @media screen and (max-width: 1023.98px) {
-//     opacity: 1;
-//     transition: 250ms;
-//   }
-// }
 
 .swiper-btn-wrapper {
   display: flex;
@@ -272,23 +203,3 @@
 .arrow-icon {
   fill: currentColor;
 }
-
-// Tablet //
-// @media screen and (min-width: 1024px) {
-// .about-restaurant {
-//   padding-top: 0;
-//   padding-bottom: 0;
-// }
-// .about-restaurant .container {
-//   padding-top: 120px;
-//   padding-bottom: 32px;
-
-//   position: relative;
-// }
-// }
-// Desktop//
-// @media screen and (min-width: 1280px) {
-//   .about-restaurant .container {
-//     padding-bottom: 50px;
-//   }
-// }
