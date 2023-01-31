@@ -189,6 +189,27 @@
 //   }
 // }
 
+.cs-swiper {
+  max-width: 330px;
+
+  border-radius: 2px;
+
+  overflow: hidden;
+  transform: translateX(-15px);
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    left: 15px;
+    bottom: -230px;
+    max-width: 428px;
+    transform: translateX(0);
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: -147px;
+    max-width: 548px;
+  }
+}
+
 .swiper-slide {
   width: auto !important;
   @media screen and (max-width: 1023.98px) {
