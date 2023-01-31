@@ -1,0 +1,23 @@
+.btn-transparent {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 22px;
+  border: 2px solid $white;
+  border-radius: 25px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $main-accent-color;
+  transform: scale(1);
+  transition: transform $transition, background-color $transition,
+    border-color $transition;
+
+  &:hover,
+  &:focus {
+    background: $white;
+    border: 2px solid $main-accent-color;
+
+    transform: scale(1.1);
+  }
+}
