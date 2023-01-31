@@ -3,7 +3,11 @@
     background: $secondary-bg-color;
 
     @media screen and (min-width: 1024px) {
-        padding: 68px 0 40px;
+        padding: 66px 0 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 72px;
       }
 }
 
@@ -16,12 +20,12 @@
 
         @media screen and (min-width: 1024px) {
             min-width: 400px;
-            min-height: 400px;
+            min-height: 440px;
         }
 
         @media screen and (min-width: 1280px) {
             min-width: 463px;
-            min-height: 460px;
+            min-height: 484px;
             margin-right: 40px;
         }
     }
@@ -94,6 +98,7 @@
 
         @media screen and (min-width: 1024px)  {
             max-width: 400px;
+            font-size: 16px;
         }
     }
 
@@ -149,27 +154,34 @@
 }
 
 .wrapper {
-    min-width: 260px;
-    max-width: 306px;
-    
+    max-width: 265px;
+        
     align-self: flex-end;
 
+    @media screen and (max-width: 1023px) {
+       margin-right: -15px;
+    }
+
     @media screen and (min-width: 1024px) {
-        min-width: 400px;
+        min-width: 428px;
     }
 
     @media screen and (min-width: 1280px) {
-        min-width: 540px;
+        min-width: 543px;
+    }
+}
+
+.gallery-item {
+    margin-left: 5px;
+    @media screen and (min-width: 1024px) {
+        margin-left: 0;
     }
 }
 
 .gallery-item>picture {
     display: block;
-    width: 194px;
     height: 194px;
-
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-
+   
     @media screen and (min-width: 1280px) {
         width: 254px;
         height: 254px;
@@ -179,13 +191,14 @@
 .large-arrow-list {
     display: flex;
     gap: 32;
+    padding-right: 17px;
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: flex-end;
 
     @media screen and (min-width: 1024px) {
         justify-content: flex-start;
-       
+        margin-bottom: 0;
     }
 }
 
@@ -193,6 +206,8 @@
 .large-arrow-prev {
     border: none;
     background: transparent;
+    line-height: 0;
+    padding: 0;
 }
 
 .large-action-item:not(:last-child) {
@@ -200,6 +215,8 @@
 }
 
 .suite-photo {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
     @media screen and (min-width: 1024px) {
         position: absolute;
         top: -100px;
@@ -212,8 +229,13 @@
     align-self: center;
 }
 
+.swiper-slide {
+    @media screen and (min-width: 414px) {
+        width: auto !important;
+    }
+}
+
 .temp {
     height: 300px;
     background-color: orange;
 }
-
