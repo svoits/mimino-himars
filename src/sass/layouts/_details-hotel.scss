@@ -111,7 +111,9 @@
   // !styles for switch buttons
   // !styles for slider
 
-  &-booking-button {
+  &-booking-button,
+  &-price-button {
+    min-width: 236px;
     display: block;
     cursor: pointer;
 
@@ -139,30 +141,30 @@
     }
   }
 
-  &-price-button {
-    display: block;
-    max-width: 236px;
-    text-decoration: none;
+  // &-price-button {
+  //   display: block;
+  //   max-width: 236px;
+  //   text-decoration: none;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    color: $main-accent-color;
+  //   font-weight: 700;
+  //   font-size: 16px;
+  //   line-height: 1.25;
+  //   color: $main-accent-color;
 
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid #ffffff;
-    border-radius: 25px;
+  //   background-color: rgba(0, 0, 0, 0.4);
+  //   border: 2px solid #ffffff;
+  //   border-radius: 25px;
 
-    padding: 14px 37px;
-    margin-left: auto;
-    margin-right: auto;
+  //   padding: 14px 37px;
+  //   margin-left: auto;
+  //   margin-right: auto;
 
-    &:hover,
-    &:focus {
-      background-color: $white;
-      border: 2px solid $main-accent-color;
-    }
-  }
+  //   &:hover,
+  //   &:focus {
+  //     background-color: $white;
+  //     border: 2px solid $main-accent-color;
+  //   }
+  // }
 }
 
 @media screen and (max-width: 413.98px) {
