@@ -1,0 +1,17 @@
+.room-header {
+  z-index: 6;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 75.5px;
+  }
+
+  @media screen and (max-width: 1279.98px) {
+    padding-bottom: 71.5px;
+  }
+  pointer-events: visible;
+}
