@@ -6,14 +6,19 @@
 @media screen and (min-width: 1024px) {
   .contacts {
     padding-top: 56px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
+
   .contacts .container {
     display: flex;
     justify-content: space-between;
   }
 }
-
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-bottom: 73px;
+  }
+}
 .contacts-title {
   font-family: 'Film P3';
   font-weight: 700;
@@ -99,10 +104,6 @@
 @media screen and (min-width: 1024px) {
   .contacts-item.restor {
     margin-bottom: 24px;
-    width: 146px;
-  }
-  .contacts-item.hotel {
-    width: 265px;
   }
 }
 .contact-title {
@@ -122,7 +123,7 @@
   }
 }
 .contacts-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-top: 9px;
   padding-bottom: 7px;
@@ -177,6 +178,7 @@
   padding-left: 10px;
   padding-right: 33px;
   max-width: 260px;
+  gap: 10px;
   margin-left: 124px;
 }
 @media screen and (max-width: 380px) {
@@ -191,13 +193,14 @@
 }
 @media screen and (max-width: 345px) {
   .contacts-wrapper.geo {
-    margin-left: 97px;
+    margin-left: 92px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319.98px) {
   .contacts-wrapper.geo {
-    margin-left: 92px;
+    margin-left: 0;
+    margin-top: 16px;
   }
 }
 
@@ -208,10 +211,10 @@
     max-width: 285px;
     margin-left: 0;
     margin-top: 48px;
+    justify-content: space-between;
   }
 }
 .contacts-geo-icon {
-  margin-right: 10px;
   fill: $accent-text-color;
 }
 
@@ -221,18 +224,21 @@
   margin-top: 32px;
   border: 1px solid #bababa;
   border-radius: 2px;
-  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1024px) {
   .map {
     width: 535px;
     height: 412px;
-    margin-top: 13px;
+    margin-top: auto;
+    transform: translateY(4px);
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (min-width: 1280px) {
   .map {
     width: 634px;
-    margin-top: 8px;
+
+    transform: translateY(-1px);
   }
 }
