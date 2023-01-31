@@ -1,4 +1,5 @@
 .contacts {
+  min-width: 320px;
   padding-bottom: 32px;
   padding-top: 36px;
   background-color: $main-bg-color;
@@ -6,7 +7,7 @@
 @media screen and (min-width: 1024px) {
   .contacts {
     padding-top: 56px;
-    padding-bottom: 44px;
+    padding-bottom: 40px;
   }
 
   .contacts .container {
@@ -40,6 +41,7 @@
   letter-spacing: 0.02em;
   color: $room-text-color;
   margin-top: 12px;
+  margin-bottom: 16px;
   @media screen and (max-width: 330px) {
     font-size: 14px;
   }
@@ -57,7 +59,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1023.98px) {
+@media screen and (max-width: 1023.98px) {
   .contacts-item {
     display: flex;
     align-items: center;
@@ -67,7 +69,7 @@
 
 @media screen and (max-width: 1023.98px) {
   .contacts-item.restor {
-    gap: 22px;
+    gap: 21px;
     flex-wrap: nowrap;
   }
   .contacts-item.hotel {
@@ -77,7 +79,7 @@
 }
 @media screen and (max-width: 380px) {
   .contacts-item.restor {
-    gap: 20px;
+    gap: 17px;
   }
   .contacts-item.hotel {
     gap: 50px;
@@ -85,7 +87,7 @@
 }
 @media screen and (max-width: 369px) {
   .contacts-item.restor {
-    gap: 15px;
+    gap: 20px;
   }
   .contacts-item.hotel {
     gap: 45px;
@@ -93,7 +95,7 @@
 }
 @media screen and (max-width: 345px) {
   .contacts-item.restor {
-    gap: 16px;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 345px) {
@@ -101,11 +103,16 @@
     gap: 40px;
   }
 }
+.contacts-item.restor {
+  margin: 0;
+}
+
 @media screen and (min-width: 1024px) {
   .contacts-item.restor {
     margin-bottom: 24px;
   }
 }
+
 .contact-title {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -113,7 +120,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: $accent-text-color;
-  @media screen and (max-width: 370px) {
+  @media screen and (max-width: 369px) {
     font-size: 15px;
   }
 }
@@ -146,8 +153,12 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 414px) {
+
+  @media screen and (max-width: 413.98px) {
     font-size: 3vw;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 9.6px;
   }
 }
 
@@ -159,8 +170,12 @@
   letter-spacing: 0.01em;
   color: $secondary-text-color;
   width: 86%;
-  @media screen and (max-width: 413px) {
+
+  @media screen and (max-width: 413.98px) {
     font-size: 3.3vw;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 10.56px;
   }
 }
 
@@ -173,6 +188,7 @@
   }
 }
 .contacts-wrapper.geo {
+  min-width: 195.2px;
   padding-top: 8px;
   padding-bottom: 7px;
   padding-left: 10px;
@@ -180,27 +196,39 @@
   max-width: 260px;
   gap: 10px;
   margin-left: 124px;
+
+  @media screen and (max-width: 413.98px) {
+    width: 58vw;
+  }
 }
 @media screen and (max-width: 380px) {
   .contacts-wrapper.geo {
     margin-left: 120px;
+    width: 58.6vw;
   }
 }
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 369px) {
   .contacts-wrapper.geo {
-    margin-left: 100px;
+    margin-left: 98px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .contacts-wrapper.geo {
+    width: 60vw;
   }
 }
 @media screen and (max-width: 345px) {
   .contacts-wrapper.geo {
-    margin-left: 92px;
+    margin-left: 93px;
+    width: 61vw;
   }
 }
 
 @media screen and (max-width: 319.98px) {
   .contacts-wrapper.geo {
-    margin-left: 0;
-    margin-top: 16px;
+    // margin-left: 0;
+    // margin-top: 16px;
   }
 }
 
@@ -230,15 +258,15 @@
   .map {
     width: 535px;
     height: 412px;
-    margin-top: auto;
-    transform: translateY(4px);
+    margin-top: 13px;
+    // transform: translateY(4px);
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (min-width: 1280px) {
   .map {
     width: 634px;
-
-    transform: translateY(-1px);
+    margin-top: auto;
+    // transform: translateY(-1px);
   }
 }
