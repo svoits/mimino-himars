@@ -1,0 +1,163 @@
+.amenities {
+  background-color: $main-bg-color;
+  padding: 32px 0;
+  min-width: 320px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.amenities-items {
+  margin-bottom: 32px;
+}
+
+.amen-main-header {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+.main-description {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-description {
+    width: 757px;
+  }
+
+  .paragraphs {
+    display: flex;
+    gap: 80px;
+  }
+
+  .paragraphs p {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .paragraphs {
+    gap: 159px;
+  }
+}
+
+.amen-sub-header {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+.amen-item {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .first-child {
+    margin-bottom: 16px;
+  }
+}
+
+.amen-item p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $room-text-color;
+}
+
+.last-item {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .book-room-container {
+    text-align: center;
+  }
+}
+
+.book-room {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.book-room-btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  color: $white;
+  background: $black;
+  border: 1px solid $main-accent-color;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .first-child {
+    padding: 0;
+  }
+
+  .book-room-btn {
+    width: 434px;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .book-room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 495px;
+    margin-top: 0;
+  }
+
+  .book-room {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .book-room-container {
+    margin-left: 555px;
+  }
+
+  .book-room-btn,
+  .book-room {
+    margin-left: 8px;
+  }
+}
+
+.right-arrow {
+  fill: $accent-text-color;
+}
