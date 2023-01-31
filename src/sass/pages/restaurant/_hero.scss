@@ -1,0 +1,37 @@
+.hero-restaurant {
+  background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+    url(../images/restaurant/hero-bg-mobile.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/restaurant/hero-bg-mobile@2x.jpg);
+  }
+  @media screen and (min-width: 414px) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/restaurant/hero-bg-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+        url(../images/restaurant/hero-bg-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../images/restaurant/hero-bg-desk.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+        url(../images/restaurant/hero-bg-desk@2x.jpg);
+    }
+  }
+}
+
+.hero-restaurant-subtitle {
+  font-size: 20px;
+}
+.restaurant-hero-btn:last-child {
+  padding: 12px 30px;
+}
