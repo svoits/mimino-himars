@@ -193,8 +193,8 @@
   color: $black;
   transition: color $transition, transform $transition;
 
-  &:hover,
-  &:focus {
+  // &:focus,
+  &:hover {
     color: $main-accent-color;
     transform: scale(1.1);
   }
