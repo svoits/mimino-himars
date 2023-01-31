@@ -1,6 +1,7 @@
 // ~~ SECTION ~~ //
 
 .about-hotel.section {
+  min-width: 320px;
   padding-top: 18px;
   padding-bottom: 20px;
 
@@ -241,8 +242,7 @@
 
   transition: fill $transition;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $main-accent-color;
   }
 }
