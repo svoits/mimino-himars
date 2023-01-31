@@ -297,3 +297,9 @@
     transform: translate3d(-960px, 0px, 0px) !important;
   }
 }
+
+.details-restaurant__prev,
+.details-restaurant__next {
+  cursor: pointer;
+  line-height: 0;
+}
