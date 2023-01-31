@@ -2,18 +2,21 @@
   padding-top: 16px;
   padding-bottom: 20px;
   background-color: $main-bg-color;
-  position: relative;
+
   @media screen and (min-width: 1024px) {
     padding-bottom: 262px;
+    padding-top: 120px;
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 225px;
   }
 }
-
-// .about-restaurant .container {
-//   position: relative;
-// }
+.container {
+  outline: solid 1px red;
+}
+.about-restaurant .container {
+  position: relative;
+}
 
 .about-restaurant-uppertitle {
   font-family: 'Times New Roman';
@@ -44,17 +47,17 @@
   }
 }
 
-.about-restaurant-packaging {
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    gap: 26px;
-  }
+// .about-restaurant-packaging {
+//   @media screen and (min-width: 1024px) {
+//     display: flex;
+//     gap: 26px;
+//   }
 
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    gap: 37px;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     display: flex;
+//     gap: 37px;
+//   }
+// }
 
 .about-restaurant-description {
   font-size: 12px;
@@ -70,6 +73,7 @@
     width: 439px;
     text-align: left;
     margin-bottom: 162px;
+    margin-right: 26px;
   }
   @media screen and (min-width: 1280px) {
     width: 518px;
@@ -86,8 +90,8 @@
     margin-left: 0;
     margin-bottom: 0;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -152px;
+    left: 465px;
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
