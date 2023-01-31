@@ -85,28 +85,23 @@
 }
 
 .picture-wrapper-top {
-  display: block;
-  max-width: 244px;
+  display: inline-block;
   margin-bottom: 32px;
 
-  background-color: #dadada;
+  //   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: 1024px) {
     position: absolute;
     top: -144px;
     left: 65px;
-    max-width: 400px;
+    margin-bottom: 0;
+
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   @media screen and (min-width: 1280px) {
-    max-width: 460px;
     top: -145px;
     left: 95px;
-  }
-
-  &picture {
-    display: block;
   }
 }
 
@@ -117,11 +112,6 @@
   gap: 21px;
   align-items: center;
   margin-bottom: 32px;
-
-  @media screen and (max-width: 413.98px) {
-    flex-direction: column;
-    gap: 15px;
-  }
 
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
@@ -139,7 +129,8 @@
   color: $accent-text-color;
 
   @media screen and (max-width: 413.98px) {
-    max-width: 200px;
+    max-width: 140px;
+    font-size: 3vw;
   }
 
   @media screen and (min-width: 1024px) {
@@ -152,17 +143,13 @@
 }
 
 .picture-wrapper-bottom {
-  max-width: 200px;
-
-  background-color: #dadada;
+  //   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: 1024px) {
-    max-width: 350px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   @media screen and (min-width: 1280px) {
-    max-width: 460px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
 }
@@ -172,8 +159,10 @@
 .about-hotel-swiper {
   max-width: 290px;
 
+  border-radius: 2px;
+
   overflow: hidden;
-  transform: translateX(-21px);
+  transform: translateX(-15px);
 
   @media screen and (min-width: 360px) {
     max-width: 330px;
@@ -214,13 +203,15 @@
 
 // button swiper //
 
-.bnt-wrapper {
+.btn-wrapper {
   display: flex;
   justify-content: flex-start;
   flex-direction: row-reverse;
   gap: 32px;
   margin-left: 15px;
   margin-top: 20px;
+
+  cursor: pointer;
 
   @media screen and (min-width: 1024px) {
     margin-left: 0;
@@ -246,4 +237,10 @@
   padding: 0;
   background-color: transparent;
   border: none;
+}
+.ah-swiper-left:hover,
+.ah-swiper-left:focus,
+.ah-swiper-right:hover,
+.ah-swiper-right:focus {
+  fill: $main-accent-color;
 }

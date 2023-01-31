@@ -5,6 +5,9 @@ var swiper = new Swiper('.about-hotel-swiper', {
   loop: true,
   loopFillGroupWithBlank: true,
 
+  autoplay: true,
+  autoplaySpeed: 2000,
+
   navigation: {
     nextEl: '.ah-swiper-right',
     prevEl: '.ah-swiper-left',
