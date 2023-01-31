@@ -165,7 +165,7 @@
   }
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 413.98px) {
   .details-hotel-name {
     text-align: center;
   }
@@ -188,6 +188,16 @@
 
   .details-hotel-text {
     margin-right: 125px;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .swiper-slide {
+    opacity: 0.6;
+
+    &.swiper-slide-next {
+      opacity: 1;
+    }
   }
 }
 
