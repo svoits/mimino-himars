@@ -1,10 +1,9 @@
 var swiper = new Swiper('.cs-swiper', {
-  slidesPerView: 1.315,
-  spaceBetween: 25,
+  // loopFillGroupWithBlank: true,
+  slidesPerView: 1.53,
+  spaceBetween: 16,
 
   loop: true,
-  // loopedSlides: 4,
-  // loopFillGroupWithBlank: true,
 
   //   autoplay: true,
   //   autoplaySpeed: 2000,
