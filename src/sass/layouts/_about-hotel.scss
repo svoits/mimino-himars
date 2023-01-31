@@ -157,16 +157,12 @@
 // ~~ SWIPER ~~ //
 
 .about-hotel-swiper {
-  max-width: 290px;
+  max-width: 330px;
 
   border-radius: 2px;
 
   overflow: hidden;
   transform: translateX(-15px);
-
-  @media screen and (min-width: 360px) {
-    max-width: 330px;
-  }
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -182,12 +178,6 @@
 }
 
 .swiper-slide {
-  width: 215px;
-
-  @media screen and (min-width: 360px) {
-    width: auto;
-  }
-
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
     transition: 250ms;
