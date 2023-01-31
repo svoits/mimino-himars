@@ -1,78 +1,72 @@
-<section class="classic-suite section">
+<section class="classic-suite">
   <div class="container">
-    <!-- <ul class="classic-suite-content list">
-      <li class="content-item"> -->
-    <div class="classic-suite-wrapper">
-      <p class="classic-suite-subtitle">Amet minim mollit non</p>
-      <h2 class="classic-suite-logo">MIMIHO</h2>
-      <h3 class="classic-suite-title title">ДВОМІСНИЙ НОМЕР</h3>
-      <p class="classic-suite-description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
-    <div class="classic-suite-photo">
-      <picture class="suite-photo">
-        <!-- desktop -->
-        <source
-          media="(min-width:1280px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-desk.webp    1x,
-            ./images/hotel/classic-suite/suite-desk@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1280px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-desk.jpg    1x,
-            ./images/hotel/classic-suite/suite-desk@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- tablet -->
-        <source
-          media="(min-width:1024px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-tablet.webp    1x,
-            ./images/hotel/classic-suite/suite-tablet@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:1024px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-tablet.jpg    1x,
-            ./images/hotel/classic-suite/suite-tablet@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <!-- mobile -->
-        <source
-          media="(min-width:320px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-mobile.webp    1x,
-            ./images/hotel/classic-suite/suite-mobile@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <source
-          media="(min-width:320px)"
-          srcset="
-            ./images/hotel/classic-suite/suite-mobile.jpg    1x,
-            ./images/hotel/classic-suite/suite-mobile@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          src="./images/hotel/classic-suite/suite-mobile.jpg"
-          alt="photo gallery"
-        />
-      </picture>
-    </div>
-    <!-- </li> -->
-    <!-- <li class="content-item"> -->
+    <p class="classic-suite-subtitle">Amet minim mollit non</p>
+    <h2 class="classic-suite-logo">MIMIHO</h2>
+    <h3 class="classic-suite-title">ДВОМІСНИЙ НОМЕР</h3>
+    <p class="classic-suite-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <!-- desktop -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-desk.webp    1x,
+          ./images/hotel/classic-suite/suite-desk@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-desk.jpg    1x,
+          ./images/hotel/classic-suite/suite-desk@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- tablet -->
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-tablet.webp    1x,
+          ./images/hotel/classic-suite/suite-tablet@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-tablet.jpg    1x,
+          ./images/hotel/classic-suite/suite-tablet@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- mobile -->
+      <source
+        media="(min-width:320px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-mobile.webp    1x,
+          ./images/hotel/classic-suite/suite-mobile@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width:320px)"
+        srcset="
+          ./images/hotel/classic-suite/suite-mobile.jpg    1x,
+          ./images/hotel/classic-suite/suite-mobile@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/hotel/classic-suite/suite-mobile.jpg"
+        alt="photo gallery"
+        class="classic-suite-photo"
+      />
+    </picture>
+
     <div class="wrapper">
       <div dir="rtl" class="cs-swiper swiper-container">
         <div class="swiper-wrapper">
@@ -314,23 +308,20 @@
           </div>
         </div>
       </div>
-      <ul class="classic-arrow-list list">
-        <li class="classic-arrow-item">
-          <button type="button" class="cs-swiper-prev btn">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="classic-arrow-item">
-          <button type="button" class="cs-swiper-next btn">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
+
+      <button type="button" class="cs-swiper-prev">
+        <svg width="32" height="32" class="cs-arrow-icon">
+          <use href="./images/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="cs-swiper-next">
+        <svg width="32" height="32" class="cs-arrow-icon">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
+
     <ul class="classic-action-list list">
       <li class="classic-action-item">
         <a href="./room.html" class="classic-suite-btn link" target="blank_"
@@ -341,7 +332,5 @@
         <button class="classic-suite-btn btn">Переглянути ціни</button>
       </li>
     </ul>
-    <!-- </li> -->
-    <!-- </ul> -->
   </div>
 </section>
