@@ -314,18 +314,16 @@
 .swiper-slide {
   width: auto !important;
 }
-@media screen and (max-width: 1023.98px) {
-  .swiper-wrapper {
+
+.details-restaurant .swiper-wrapper {
+  @media screen and (max-width: 1023.98px) {
     transform: translate3d(-588px, 0px, 0px) !important;
   }
-}
-@media screen and (min-width: 1024px) {
-  .swiper-wrapper {
+
+  @media screen and (min-width: 1024px) {
     transform: translate3d(-1696px, 0px, 0px) !important;
   }
-}
-@media screen and (min-width: 1280px) {
-  .swiper-wrapper {
+  @media screen and (min-width: 1280px) {
     transform: translate3d(-960px, 0px, 0px) !important;
   }
 }

@@ -211,7 +211,8 @@
   }
 }
 
-.ah-swiper-left {
+.ah-swiper-left,
+.ah-swiper-right {
   width: 32px;
   height: 32px;
   padding: 0;
@@ -221,28 +222,11 @@
 
   cursor: pointer;
 
-  transition: fill $transition;
+  transition: fill $transition, transform $transition;
 
   &:hover,
   &:focus {
     fill: $main-accent-color;
-  }
-}
-
-.ah-swiper-right {
-  display: block;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
-
-  transition: fill $transition;
-
-  &:hover {
-    fill: $main-accent-color;
+    transform: scale(1.1);
   }
 }
