@@ -107,6 +107,7 @@
     gap: 40px;
     // align-self: flex-end;
     overflow: hidden;
+		
   }
 
   &-btn {
@@ -132,7 +133,7 @@
   &-btn.link {
     font-family: inherit;
     display: block;
-  }
+	}
 }
 
 .content-item:not(:last-child) {
@@ -172,10 +173,12 @@
 
   @media screen and (min-width: 1024px) {
     min-width: 400px;
+		
   }
 
   @media screen and (min-width: 1280px) {
     min-width: 540px;
+		
   }
 }
 
@@ -208,10 +211,12 @@
     bottom: -230px;
     max-width: 428px;
     transform: translateX(0);
+		
   }
   @media screen and (min-width: 1280px) {
-    bottom: -147px;
+    bottom: -290px;
     max-width: 548px;
+		
   }
 }
 
@@ -237,23 +242,55 @@
   margin-bottom: 20px;
   // justify-content: flex-end;
 
+
   @media screen and (min-width: 1024px) {
     justify-content: flex-start;
+		position: absolute;
+		bottom: -310px;
+		left: 330px;
+
+
   }
+		 @media screen and (min-width: 1280px) {
+		 	// justify-content: flex-start;
+		 	position: absolute;
+		 	bottom: -370px;
+		 	left: 447px;
+	
+	
+		 }
 }
 
 .grand-arrow-next,
 .grand-arrow-prev {
   border: none;
   background: transparent;
+	
 }
 
 .grand-action-item:not(:last-child) {
   margin-bottom: 16px;
+	
+	
 }
 
 .grand-action-list {
   align-self: flex-end;
+	
+	@media screen and (min-width: 1024px) {
+			justify-content: flex-start;
+			position: absolute;
+			bottom: -337px;
+			left: 736px;
+}
+
+ @media screen and (min-width: 1280px) {
+	position: absolute;
+ 	bottom: -400px;
+ 	left: 920px;
+
+ }
+
 }
 
 .temp {
