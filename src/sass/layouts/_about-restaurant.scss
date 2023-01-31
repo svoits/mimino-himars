@@ -1,0 +1,205 @@
+.about-restaurant {
+  min-width: 320px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  background-color: $main-bg-color;
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 262px;
+    padding-top: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 225px;
+  }
+}
+
+.about-restaurant .container {
+  position: relative;
+}
+
+.about-restaurant-uppertitle {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $uppertitle-text-color;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.about-restaurant-title {
+  font-family: 'Film P3';
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: $secondary-text-color;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+}
+
+.about-restaurant-description {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $room-text-color;
+  width: 258px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    width: 439px;
+    text-align: left;
+    margin-bottom: 162px;
+    margin-right: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 518px;
+    text-align: left;
+  }
+}
+
+.about-restaurant-img {
+  margin-left: auto;
+  margin-bottom: 32px;
+  box-shadow: 2px 2px 60px 2px #00000040;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -152px;
+    right: 80px;
+
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 110px;
+  }
+}
+
+.about-restaurant-wrapper {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+}
+
+.desc-color {
+  color: $accent-text-color;
+  width: 163px;
+  margin-bottom: 0;
+  margin-top: 70px;
+
+  @media screen and (max-width: 413.98px) {
+    font-size: 2.9vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 312px;
+    margin-top: 194px;
+    margin-bottom: 0;
+  }
+}
+
+.about-restaurant-img-position {
+  margin-right: auto;
+  margin-bottom: 32px;
+  box-shadow: 2px 2px 60px 2px #00000040;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+// ~~ SWIPER ~~ //
+
+.ar-swiper {
+  max-width: 330px;
+  margin-left: auto;
+
+  overflow: hidden;
+  transform: translateX(15px);
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: 15px;
+    bottom: -230px;
+
+    max-width: 428px;
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 548px;
+    bottom: -175px;
+  }
+}
+
+.swiper-slide {
+  width: auto !important;
+
+  @media screen and (max-width: 1023.98px) {
+    opacity: 0.6;
+    transition: 250ms;
+  }
+}
+
+.swiper-slide-active {
+  @media screen and (max-width: 1023.98px) {
+    opacity: 1;
+    transition: 250ms;
+  }
+}
+
+.swiper-btn-wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+
+  margin-right: 15px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 36px;
+  }
+}
+
+.swiper-btn-arrow {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+
+  cursor: pointer;
+
+  color: $black;
+  transition: color $transition, transform $transition;
+
+  // &:focus,
+  &:hover {
+    color: $main-accent-color;
+    transform: scale(1.1);
+  }
+}
+
+.arrow-icon {
+  fill: currentColor;
+}
