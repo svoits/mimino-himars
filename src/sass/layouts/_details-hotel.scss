@@ -3,6 +3,7 @@
 
   padding-top: 24px;
   padding-bottom: 40px;
+  margin: 0 auto;
 
   background-color: $black;
   background-image: linear-gradient($details-bg-color, $details-bg-color),
@@ -293,6 +294,7 @@
 
 @media screen and (min-width: 1280px) {
   .details-hotel {
+    max-width: 1280px;
     background-image: linear-gradient($details-bg-color, $details-bg-color),
       url(../images/homepage/details-hotel/details-bg-desk.jpg);
 
