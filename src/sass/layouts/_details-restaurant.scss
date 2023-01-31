@@ -88,7 +88,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 1.07;
+    line-height: 1.075;
 
     letter-spacing: 0.3em;
     color: $white;
@@ -98,6 +98,7 @@
     @media screen and (min-width: 1024px) {
       font-size: 64px;
       margin-bottom: 16px;
+      line-height: 1.078; 
     }
   }
 
@@ -132,8 +133,9 @@
     max-width: 259px;
 
     @media screen and (min-width: 1024px) {
+      line-height: 1.75;
       font-size: 16px;
-      max-width: 610px;
+      max-width: 610px; 
     }
   }
 
@@ -168,13 +170,15 @@
   }
 
   &__btn-item {
-    max-width: 236px;
-    width: 100%;
+    min-width: 236px;
+    width: 241px;
 
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
-    line-height: 0.8;
+    line-height: 1.25;
+    
+    letter-spacing: 0.02em;
 
     color: $main-accent-color;
     background-color: transparent;
