@@ -167,15 +167,11 @@
 // ~~ SWIPER ~~ //
 
 .ar-swiper {
-  max-width: 290px;
+  max-width: 330px;
   margin-left: auto;
 
   overflow: hidden;
   transform: translateX(15px);
-
-  @media screen and (min-width: 360px) {
-    max-width: 330px;
-  }
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -192,12 +188,15 @@
   }
 }
 
-.swiper-slide {
-  // width: 215px;
+// .swiper-slide img {
+// display: block;
+// width: 245px;
+// height: 100%;
+// object-fit: cover;
+// }
 
-  // @media screen and (min-width: 360px) {
-  //   width: auto;
-  // }
+.swiper-slide {
+  width: auto !important;
 
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
@@ -239,7 +238,6 @@
   display: flex;
   justify-content: end;
   gap: 32px;
-  cursor: pointer;
 
   margin-right: 15px;
   margin-top: 20px;
@@ -258,6 +256,21 @@
   border: none;
   padding: 0;
   line-height: 0;
+
+  cursor: pointer;
+
+  color: $black;
+  transition: color $transition, transform $transition;
+
+  &:hover,
+  &:focus {
+    color: $main-accent-color;
+    transform: scale(1.1);
+  }
+}
+
+.arrow-icon {
+  fill: currentColor;
 }
 
 // Tablet //
