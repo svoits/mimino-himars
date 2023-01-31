@@ -157,7 +157,7 @@
 }
 
 .cs-wrapper {
-    max-width: 265px;
+    max-width: 300px;
         
     @media screen and (max-width: 1023px) {
        margin-left: -15px;
@@ -172,12 +172,12 @@
     }
 }
 
-.gallery-item {
-    margin-right: 5px;
-    @media screen and (min-width: 1024px) {
-        margin-right: 0;
-    }
-}
+// .gallery-item {
+//     margin-right: 5px;
+//     @media screen and (min-width: 1024px) {
+//         margin-right: 0;
+//     }
+// }
 
 .gallery-item>picture {
     display: block;

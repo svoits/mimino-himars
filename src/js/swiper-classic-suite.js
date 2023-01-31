@@ -1,5 +1,5 @@
 var swiper = new Swiper(".classic-suite-gallery", {
-    slidesPerView: 1.25,
+    slidesPerView: 1.31,
     spaceBetween: 16,
     loop: true,
     loopFillGroupWithBlank: true,
