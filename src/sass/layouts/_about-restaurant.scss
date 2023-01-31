@@ -1,4 +1,5 @@
 .about-restaurant {
+  min-width: 320px;
   padding-top: 16px;
   padding-bottom: 20px;
   background-color: $main-bg-color;
@@ -62,10 +63,9 @@
 .about-restaurant-description {
   font-size: 12px;
   line-height: 1.2;
-  letter-spacing: 0.002em;
+  letter-spacing: 0.02em;
   color: $room-text-color;
   width: 258px;
-  text-align: left;
   margin-bottom: 28px;
 
   @media screen and (min-width: 1024px) {
@@ -87,17 +87,15 @@
   box-shadow: 2px 2px 60px 2px #00000040;
 
   @media screen and (min-width: 1024px) {
-    margin-left: 0;
-    margin-bottom: 0;
     position: absolute;
     top: -152px;
-    left: 465px;
+    right: 80px;
+
+    margin-left: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-24%, -10%);
+    right: 110px;
   }
 }
 
@@ -150,18 +148,19 @@
 
   @media screen and (min-width: 1024px) {
     position: absolute;
-    right: 28px;
+    right: 15px;
     bottom: -230px;
 
     max-width: none;
     width: 428px;
     margin-right: 0;
-    transform: translateY(-28px);
+    // transform: translateY(-28px);
   }
 
   @media screen and (min-width: 1280px) {
     width: 548px;
-    transform: translateY(-45%);
+    bottom: -175px;
+    // transform: translateY(-45%);
   }
 }
 
@@ -192,12 +191,13 @@
   }
 }
 .swiper-btn-wrapper {
-  margin-top: 20px;
   display: flex;
   justify-content: end;
   gap: 32px;
   cursor: pointer;
-  transform: translateX(-15);
+  // transform: translateX(-15);
+  margin-right: 15px;
+  margin-top: 20px;
 
   @media screen and (min-width: 1024px) {
     margin-top: 32px;
@@ -216,21 +216,21 @@
 }
 
 // Tablet //
-@media screen and (min-width: 1024px) {
-  // .about-restaurant {
-  //   padding-top: 0;
-  //   padding-bottom: 0;
-  // }
-  // .about-restaurant .container {
-  //   padding-top: 120px;
-  //   padding-bottom: 32px;
+// @media screen and (min-width: 1024px) {
+// .about-restaurant {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
+// .about-restaurant .container {
+//   padding-top: 120px;
+//   padding-bottom: 32px;
 
-  //   position: relative;
-  // }
-}
+//   position: relative;
+// }
+// }
 // Desktop//
-@media screen and (min-width: 1280px) {
-  .about-restaurant .container {
-    padding-bottom: 50px;
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .about-restaurant .container {
+//     padding-bottom: 50px;
+//   }
+// }
