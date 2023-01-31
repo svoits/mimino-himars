@@ -8,8 +8,9 @@ $secondary-text-color: #494848;
 $uppertitle-text-color: #b4b4b4;
 // accent
 $main-accent-color: #f3c653;
-$accent-color07: rgba(243, 198, 83, 0.7); // main accent color with 70% transparency (icons, borders)
 $accent-text-color: #c79002;
+// main accent color with 70% transparency (icons, borders)
+$accent-color07: rgba(243, 198, 83, 0.7);
 // background
 $main-bg-color: #fffdee;
 $secondary-bg-color: #f0ecd6;
@@ -17,3 +18,5 @@ $footer-bg-color: #0e0c07;
 $hero-bg-color: rgba(0, 0, 0, 0.65);
 // placeholder
 $placeholder-color: #808080;
+//transition
+$transition: 250ms cubic-bezier(0.65, 0.05, 0.36, 1);

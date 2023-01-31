@@ -75,11 +75,11 @@
 
     @media screen and (min-width: 1024px) {
       margin-left: 231px;
+      margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
       margin-left: 253px;
-      margin-bottom: 40px;
     }
   }
 
@@ -98,7 +98,7 @@
     @media screen and (min-width: 1024px) {
       font-size: 64px;
       margin-bottom: 16px;
-      line-height: 1.078; 
+      line-height: 1.078;
     }
   }
 
@@ -135,7 +135,7 @@
     @media screen and (min-width: 1024px) {
       line-height: 1.75;
       font-size: 16px;
-      max-width: 610px; 
+      max-width: 610px;
     }
   }
 
@@ -162,39 +162,35 @@
 
     row-gap: 16px;
 
-    padding-bottom: 40px;
-
     @media screen and (min-width: 1024px) {
-      padding-bottom: 94px;
+      margin-bottom: 55px;
     }
   }
 
   &__btn-item {
     min-width: 236px;
-    width: 241px;
+    // width: 241px;
 
-    font-family: 'Montserrat';
+    // font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    
+
     letter-spacing: 0.02em;
 
     color: $main-accent-color;
     background-color: transparent;
 
-    padding: 14px 24px;
+    padding: 12px 21px;
 
     border: 2px solid $white;
     border-radius: 25px;
 
-    transition-duration: 250ms;
-    transition-property: background-color border-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-duration: 250ms;
+    // transition-property: background-color border-color;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 1024px) {
-      min-width: 236px;
-    }
+    transition: background-color $transition, border-color $transition;
 
     &:hover,
     &:focus {
@@ -203,13 +199,43 @@
     }
   }
 
-  &__swiper {
-    @media screen and (max-width: 1023.98px) {
-      margin-left: 25px;
-      width: 100%;
+  &__link-item {
+    display: inline-block;
+    min-width: 236px;
+    // width: 241px;
+
+    // font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+
+    letter-spacing: 0.02em;
+
+    color: $main-accent-color;
+    background-color: transparent;
+
+    padding: 12px 21px;
+
+    border: 2px solid $white;
+    border-radius: 25px;
+
+    transition: background-color $transition, border-color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      border-color: $main-accent-color;
     }
+  }
+
+  &__swiper {
+    margin-bottom: 32px;
+    // margin-left: 25px;
+    width: 100%;
 
     @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
       position: relative;
       overflow: hidden;
     }
@@ -220,12 +246,11 @@
   }
 
   &__swiper-container {
-    margin-bottom: 32px;
     width: 375px;
 
     @media screen and (min-width: 1024px) {
       width: 662px;
-      margin-bottom: 0;
+
       overflow: hidden;
     }
 
@@ -262,7 +287,7 @@
     display: flex;
     column-gap: 32px;
 
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
       margin-top: 24px;
@@ -272,13 +297,16 @@
   &__btn-svg {
     fill: $white;
 
-    transition-duration: 250ms;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-duration: 250ms;
+    // transition-property: fill;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    transition: fill $transition, transform $transition;
+
+    // &:focus,
+    &:hover {
       fill: $main-accent-color;
+      transform: scale(1.1);
     }
   }
 }
