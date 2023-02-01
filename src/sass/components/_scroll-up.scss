@@ -5,7 +5,7 @@
 
   z-index: 999;
   position: fixed;
-  right: 20px;
+  right: 30px;
   bottom: 30px;
 
   width: 40px;
@@ -33,7 +33,7 @@
   }
 }
 
-.scroll-up.scroll-up__hide{
+.scroll-up.scroll-up__hide {
   opacity: 0;
   visibility: hidden;
 }
