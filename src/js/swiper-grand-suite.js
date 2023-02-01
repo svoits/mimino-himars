@@ -1,4 +1,4 @@
-var swiper = new Swiper('.classic-suite-gallery', {
+var swiper = new Swiper('.grand-suite-gallery', {
   slidesPerView: 1.42,
   spaceBetween: 16,
 
@@ -9,8 +9,8 @@ var swiper = new Swiper('.classic-suite-gallery', {
   autoplaySpeed: 2000,
 
   navigation: {
-    nextEl: '.classic-arrow-next',
-    prevEl: '.classic-arrow-prev',
+    nextEl: '.grand-arrow-next',
+    prevEl: '.grand-arrow-prev',
   },
 
   breakpoints: {
