@@ -18,4 +18,5 @@ var swiper = new Swiper('.grand-suite-gallery', {
       slidesPerView: 2,
       spaceBetween: 40,
     },
+  },
 });
