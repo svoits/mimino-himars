@@ -1,0 +1,232 @@
+// ~~ SECTION ~~ //
+
+.about-hotel.section {
+  min-width: 320px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 197px;
+  }
+}
+
+// ~~ CONTAINER ~~ //
+
+.about-hotel > .container {
+  position: relative;
+  //   outline: 1px solid tomato;
+}
+
+// ~~ ABOUT HOTEL TOP ~~ //
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 142px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 162px;
+  }
+}
+
+.first-text {
+  margin-bottom: 6px;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: $uppertitle-text-color;
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.second-text {
+  margin-bottom: 16px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
+}
+
+.third-text {
+  max-width: 242px;
+
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $room-text-color;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 419px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 488px;
+  }
+}
+
+.picture-wrapper-top {
+  display: inline-block;
+  margin-bottom: 32px;
+
+  //   background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: -144px;
+    left: 65px;
+    margin-bottom: 0;
+
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1280px) {
+    top: -145px;
+    left: 95px;
+  }
+}
+
+// ~~ ABOUT HOTEL BOTTOM ~~ //
+
+.about-hotel-bottom {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+    gap: 48px;
+    margin-bottom: 0;
+  }
+}
+
+.bottom-text {
+  max-width: 163px;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: $accent-text-color;
+
+  @media screen and (max-width: 413.98px) {
+    max-width: 140px;
+    font-size: 3vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 312px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-55px);
+  }
+}
+
+.picture-wrapper-bottom {
+  //   background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1280px) {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// ~~ SWIPER ~~ //
+
+.about-hotel-swiper {
+  max-width: 330px;
+
+  border-radius: 2px;
+
+  overflow: hidden;
+  transform: translateX(-15px);
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    left: 15px;
+    bottom: -230px;
+    max-width: 428px;
+    transform: translateX(0);
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: -147px;
+    max-width: 548px;
+  }
+}
+
+.swiper-slide {
+  @media screen and (max-width: 1023.98px) {
+    opacity: 0.6;
+    transition: 250ms;
+  }
+}
+
+.swiper-slide-active {
+  @media screen and (max-width: 1023.98px) {
+    opacity: 1;
+    transition: 250ms;
+  }
+}
+
+// button swiper //
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  gap: 32px;
+  margin-left: 15px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+  }
+}
+
+.ah-swiper-left,
+.ah-swiper-right {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: fill $transition, transform $transition;
+
+  &:hover,
+  &:focus {
+    fill: $main-accent-color;
+    transform: scale(1.1);
+  }
+}
