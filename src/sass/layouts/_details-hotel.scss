@@ -204,12 +204,12 @@
 }
 
 @media screen and (max-width: 1023.98px) {
-  .swiper-slide {
+  .details-hotel .swiper-slide {
     opacity: 0.6;
+  }
 
-    &.swiper-slide-next {
-      opacity: 1;
-    }
+  .details-hotel .swiper-slide-active {
+    opacity: 1;
   }
 }
 

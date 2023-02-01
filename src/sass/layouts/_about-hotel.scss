@@ -180,14 +180,14 @@
   }
 }
 
-.swiper-slide {
+.about-hotel .swiper-slide {
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
     transition: 250ms;
   }
 }
 
-.swiper-slide-active {
+.about-hotel .swiper-slide-active {
   @media screen and (max-width: 1023.98px) {
     opacity: 1;
     transition: 250ms;
@@ -198,8 +198,8 @@
 
 .btn-wrapper {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-direction: row;
   gap: 32px;
   margin-left: 15px;
   margin-top: 20px;

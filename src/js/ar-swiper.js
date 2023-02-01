@@ -10,8 +10,8 @@ var swiper = new Swiper('.ar-swiper', {
   autoplaySpeed: 2000,
 
   navigation: {
-    nextEl: '.ar-swiper-prew',
-    prevEl: '.ar-swiper-next',
+    nextEl: '.ar-swiper-next',
+    prevEl: '.ar-swiper-prev',
   },
 
   breakpoints: {

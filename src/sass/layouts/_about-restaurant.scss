@@ -152,7 +152,7 @@
 }
 
 .about-restaurant .swiper-slide {
-  width: auto !important;
+  // width: auto !important;
 
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
@@ -160,7 +160,7 @@
   }
 }
 
-.swiper-slide-active {
+.about-restaurant .swiper-slide-active {
   @media screen and (max-width: 1023.98px) {
     opacity: 1;
     transition: 250ms;
