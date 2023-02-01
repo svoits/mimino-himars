@@ -1,0 +1,219 @@
+.menu {
+  min-width: 320px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $secondary-bg-color;
+  color: $black;
+  @media screen and (min-width: 1024px) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
+}
+
+.menu-title {
+  font-family: 'Times New Roman';
+  font-size: 7.7vw;
+  line-height: 1.15;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 319.98px) {
+    font-size: 24.64px;
+  }
+
+  @media screen and (min-width: 414px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu-wrapper {
+  display: block;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 88px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    column-gap: 140px;
+  }
+}
+
+.menu-column {
+  @media screen and (min-width: 1024px) {
+    flex-basis: calc((100% - 88px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 140px) / 2);
+  }
+}
+
+.menu-column:not(:last-child) {
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 16px;
+  }
+}
+
+.menu-table {
+  width: 100%;
+}
+
+.menu-category {
+  margin-bottom: 16px;
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 1.15;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+.menu-category:not(:first-child) {
+  margin-top: 16px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 20px;
+  }
+}
+
+.dish-title {
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.dish-additional-style {
+  padding-bottom: 8px;
+}
+
+.dish-description {
+  max-width: 220px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 12px;
+  }
+}
+
+.dish-weight {
+  font-weight: 300;
+  font-size: 3.4vw;
+  line-height: 1.21;
+  white-space: nowrap;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 51px;
+
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 319.98px) {
+    font-size: 10.88px;
+  }
+
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-right: 60px;
+  }
+}
+
+.dish-weight.drinks-styles {
+  @media screen and (min-width: 1024px) {
+    padding-right: 50px;
+  }
+}
+
+.dish-price {
+  font-weight: 700;
+  font-size: 3.4vw;
+  line-height: 1.21;
+  white-space: nowrap;
+  max-width: 60px;
+
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 319.98px) {
+    font-size: 10.88px;
+  }
+
+  @media screen and (min-width: 414px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 70px;
+  }
+}
+
+.btn-menu {
+  cursor: pointer;
+  font-weight: 700;
+
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+
+  color: $main-accent-color;
+  width: 236px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $black;
+  border: 2px solid $secondary-bg-color;
+  border-radius: 25px;
+
+  transition: background-color $transition, border-color $transition,
+    transform $transition;
+
+  &:hover,
+  &:focus {
+    background: $white;
+    border-color: $main-accent-color;
+    transform: scale(1.1);
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: 0;
+    margin-top: 41px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+}
