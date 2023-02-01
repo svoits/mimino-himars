@@ -14,15 +14,14 @@
 .classic-suite {
   &-wrapper {
     min-width: 290px;
-    max-width: 306px;
 
     @media screen and (min-width: 1024px) {
-      min-width: 400px;
+      max-width: 424px;
       min-height: 440px;
     }
 
     @media screen and (min-width: 1280px) {
-      min-width: 463px;
+      min-width: 509px;
       min-height: 484px;
       // margin-right: 40px;
     }
@@ -67,7 +66,7 @@
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: $black;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin-bottom: 12px;
 
     @media screen and (max-width: 340px) {
@@ -154,7 +153,7 @@
 }
 
 .cs-wrapper {
-  max-width: 260px;
+  max-width: 284px;
 
   @media screen and (max-width: 1023px) {
     margin-left: -15px;
@@ -233,7 +232,7 @@
 
 // ~~ SWIPER ~~ //
 
-.about-hotel-swiper {
+.classic-suite-gallery {
   max-width: 330px;
 
   border-radius: 2px;
@@ -242,9 +241,6 @@
   transform: translateX(-15px);
 
   @media screen and (min-width: 1024px) {
-    position: absolute;
-    left: 15px;
-    bottom: -230px;
     max-width: 428px;
     transform: translateX(0);
   }
@@ -254,14 +250,14 @@
   }
 }
 
-.swiper-slide {
+.classic-suite .swiper-slide {
   @media screen and (max-width: 1023.98px) {
     opacity: 0.6;
     transition: 250ms;
   }
 }
 
-.swiper-slide-active {
+.classic-suite .swiper-slide-active {
   @media screen and (max-width: 1023.98px) {
     opacity: 1;
     transition: 250ms;
