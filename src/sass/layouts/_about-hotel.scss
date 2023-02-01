@@ -133,7 +133,9 @@
     max-width: 140px;
     font-size: 3vw;
   }
-
+  @media screen and (max-width: 319.98px) {
+    font-size: 9.6px;
+  }
   @media screen and (min-width: 1024px) {
     max-width: 312px;
     font-size: 16px;
