@@ -13,10 +13,10 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 30;
+    z-index: 1;
 
     width: 414px;
-    height: 668px;
+    max-height: 98%;
 
     margin-left: auto;
     margin-right: auto;
@@ -30,14 +30,18 @@
 
     @media screen and (min-width: 1024px) {
         width: 712px;
-        height: 522px;
     }
 }
 
+.modal {
+    opacity: 1;
+    visibility: visible;
+}
+
 .btn-close {
-    fill: #000;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
+    width: 24px;
+    height: 24px;
+    fill:#000000;
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -45,31 +49,53 @@
     position: absolute;
     top: 16px;
     right: 16px;
-}
-
-.select-icon {
-    background-image: url(../images/icons.svg#icon-arrow-down);
-    background-repeat: no-repeat, repeat;
-    background-position: right 0.7em top 50%, 0 0;
-    background-size: 24px auto, 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-icon {
     position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 672px;
+    top: 16px;
+}
+
+.select-icon {
+    position: absolute;
     top: 16px;
     right: 16px;
+    width: 24px;
+    height: 24px;
+    fill: #C79002;
+ 
+    z-index: 999;
+}
+
+.icon-calendate {
+    background-color: #FFFDEE;
 }
 
 .book-table-modal__container {
     width: 414px;
-    height: 668px;
     padding: 60px 15px;
 
     @media screen and (min-width: 1024px) {
         padding: 60px 60px;
         width: 712px;
-        height: 638px;
     }
+}
+
+.input-span {
+    display: inline-flex;
+    color:#FFFDEE;
+    width: 20px;
+    height: 20px;
+    right: 14px;
+    top: 20px;
+    z-index: 100;
+    position: absolute;
+
 }
 
 .book-table-modal__title {
@@ -114,10 +140,15 @@
     margin-bottom: 40px;
 }
 
+.form-wrap {
+    position: relative;
+}
+
 .form-book-table__input {
     width: 100%;
     height: 54px;
     padding: 0px 12px;
+    appearance: none;
 
     font-family: 'Times New Roman';
 
@@ -169,7 +200,8 @@
 .form-button {
     display: block;
     margin: 0 auto;
-    max-width: 592px;
+    width: 100%;
+    
     padding: 18px 110px;
     
     font-style: normal;
@@ -189,3 +221,4 @@
     color: #000;
     background-color: #f3c653;
 }
+

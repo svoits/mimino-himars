@@ -10,64 +10,77 @@
       <form class="form-book-table">
         <div class="user-form-wrap">
           <div class="form-field" role="group">
-            <input
-              class="form-book-table__input"
-              name="name-user"
-              id="name-user"
-              type="text"
-              pattern="([a-zA-Zа-яА-Я]+)"
-              placeholder="Ваше ім'я"
-              required=""
-            />
+            <div class="form-wrap">
+              <input
+                class="form-book-table__input"
+                name="name-user"
+                id="name-user"
+                type="text"
+                pattern="([a-zA-Zа-яА-Я]+)"
+                placeholder="Ваше ім'я"
+                required=""
+              />
+            </div>
             <label class="form__label" for="name-user"
               >На кого забронювати столик?</label
             >
           </div>
 
           <div class="form-field" role="group">
-            <input
-              class="form-book-table__input"
-              name="user-tel"
-              id="user-phone"
-              type="tel"
-              pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="+38 (___) ___-__-__"
-              required=""
-            />
+            <div class="form-wrap">
+              <input
+                class="form-book-table__input"
+                name="user-tel"
+                id="user-phone"
+                type="tel"
+                pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="+38 (___) ___-__-__"
+                required=""
+              />
+            </div>
             <label class="form__label" for="user-tel">Номер телефону</label>
           </div>
         </div>
 
         <div class="select-form-wrap">
           <div class="form-field" role="group">
-            <select
-              class="form-book-table__input"
-              name="number-guests"
-              id="number-guests"
-            >
-              <option value="Кількість осіб">1</option>
-              <option value="Кількість осіб" selected="">2</option>
-              <option value="Кількість осіб">3</option>
-              <option value="Кількість осіб">4</option>
-              <option value="Кількість осіб">5</option>
-              <option value="Кількість осіб">6</option>
-            </select>
-            <svg class="select-icon" width="20" height="12">
-              <use href="./images/icons.svg#icon-arrow-down"></use>
-            </svg>
+            <div class="form-wrap">
+              <select
+                class="form-book-table__input"
+                name="number-guests"
+                id="number-guests"
+              >
+                <option value="Кількість осіб">1</option>
+                <option value="Кількість осіб" selected="">2</option>
+                <option value="Кількість осіб">3</option>
+                <option value="Кількість осіб">4</option>
+                <option value="Кількість осіб">5</option>
+                <option value="Кількість осіб">6</option>
+                <option value="Кількість осіб">6+</option>
+              </select>
+              <svg class="select-icon" width="20" height="12">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
             <label class="form__label form__label--select" for="number-guests">
               Столик на яку кількість осіб?
             </label>
           </div>
           <div class="form-field" role="group">
-            <input
-              placeholder="Сьогодні"
-              type="date"
-              name="user-date"
-              class="form-book-table__input"
-              required
-              id="user-date"
-            />
+            <div class="form-wrap">
+              <input
+                placeholder="Сьогодні"
+                class="form-book-table__input"
+                type="text"
+                onfocus="(this.type='date')"
+                required
+                id="user-date"
+              />
+              <svg class="select-icon icon-calendate" width="20" height="12">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+              </svg>
+              <span class="input-span"></span>
+            </div>
             <label for="user-date" class="form__label"
               >На яку дату бронювати?</label
             >
