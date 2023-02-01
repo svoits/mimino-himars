@@ -19,6 +19,7 @@
                 pattern="([a-zA-Zа-яА-Я]+)"
                 placeholder="Ваше ім'я"
                 required=""
+                autocomplete="name"
               />
             </div>
             <label class="form__label" for="name-user"
@@ -33,9 +34,10 @@
                 name="user-tel"
                 id="user-phone"
                 type="tel"
-                pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                 placeholder="+38 (___) ___-__-__"
                 required=""
+                autocomplete="tel"
               />
             </div>
             <label class="form__label" for="user-tel">Номер телефону</label>
