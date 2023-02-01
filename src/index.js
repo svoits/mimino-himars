@@ -1,1 +1,2 @@
-import "./js/smooth-scroll"
+import './js/smooth-scroll';
+import './js/scroll-up';
