@@ -110,6 +110,7 @@
   }
 
   &-btn {
+    cursor: pointer;
     width: 236px;
     padding: 12px 34px;
 
@@ -120,12 +121,16 @@
     color: $main-accent-color;
     background: $black;
 
-    border: 2px solid $accent-text-color;
+    border: 2px solid $white;
     border-radius: 25px;
+    transition: background-color $transition, border-color $transition,
+      transform $transition;
 
     &:hover,
     &:focus {
       background: $white;
+      border-color: $main-accent-color;
+      transform: scale(1.1);
     }
   }
 
