@@ -1,0 +1,24 @@
+.scroll-up {
+    z-index: 999;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    &__hide{
+        display: none;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        fill: $accent-color07;
+    }
+
+}
