@@ -85,6 +85,14 @@
   padding-top: 9.5px;
   padding-bottom: 9.5px;
   color: $main-accent-color;
+
+  transition: transform $transition;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
   @media screen and (max-width: 380px) {
     font-size: 4.2vw;
     padding: 2.3vw 0;
