@@ -1,24 +1,34 @@
 .scroll-up {
-    z-index: 999;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+
+  width: 40px;
+  height: 64px;
+
+  &__hide {
+    display: none;
+  }
+
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $accent-color07;
 
-    width: 55px;
-    height: 55px;
+    transition: color $transition, transform $transition;
 
-    &__hide{
-        display: none;
+    &:hover,
+    &:focus {
+      color: $main-accent-color;
+      transform: scale(1.1);
     }
+  }
 
-    &__img{
-        width: 100%;
-        height: 100%;
-        fill: $accent-color07;
-    }
-
+  &__img {
+    fill: currentColor;
+  }
 }
