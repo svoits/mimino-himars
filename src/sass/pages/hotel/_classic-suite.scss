@@ -108,8 +108,9 @@
     &-gallery {
         display: flex;
         gap: 40px;
-        align-self: flex-end;
+        // align-self: flex-end;
         overflow: hidden;
+        // padding-right: -30px;
     }
 
     &-btn {
@@ -157,7 +158,7 @@
 }
 
 .cs-wrapper {
-    max-width: 300px;
+    max-width: 260px;
         
     @media screen and (max-width: 1023px) {
        margin-left: -15px;
@@ -223,9 +224,12 @@
     @media screen and (min-width: 1024px) {
         position: absolute;
         top: -100px;
+        left: 470px;
+    }
+
+    @media screen and (min-width: 1280px) {
         left: 557px;
     }
-    
 }
 
 .classic-action-list {
