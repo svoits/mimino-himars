@@ -11,13 +11,6 @@ const btnUp = {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
       scrollY > 400 ? this.show() : this.hide();
     });
-    document.querySelector('.scroll-up').onclick = () => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
   }
 }
 
