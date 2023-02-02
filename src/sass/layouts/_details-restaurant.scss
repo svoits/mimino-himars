@@ -188,10 +188,6 @@
     border: 2px solid $white;
     border-radius: 25px;
 
-    // transition-duration: 250ms;
-    // transition-property: background-color border-color;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     transition: background-color $transition, border-color $transition,
       transform $transition;
 
@@ -237,23 +233,9 @@
 
   &__swiper {
     margin-bottom: 32px;
-    // margin-left: 25px;
-
-    // @media screen and (min-width: 1024px) {
-    //   margin-bottom: 0;
-    //   position: relative;
-    //   overflow: hidden;
-    // }
-
   }
 
   &__swiper-container {
-    // width: 375px;
-
-    // @media screen and (min-width: 1024px) {
-    //   width: 662px;
-    // }
-
     @media screen and (min-width: 1280px) {
       max-width: 842px;
     }
@@ -284,8 +266,6 @@
     display: flex;
     column-gap: 32px;
 
-    // margin-bottom: 32px;
-
     @media screen and (min-width: 1024px) {
       margin-top: 24px;
     }
@@ -295,7 +275,6 @@
     fill: $white;
     transition: fill $transition, transform $transition;
 
-    // &:focus,
     &:hover {
       fill: $main-accent-color;
       transform: scale(1.1);
