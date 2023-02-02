@@ -1,6 +1,8 @@
 var swiper = new Swiper(".details-restaurant__swiper-container", {
       slidesPerView: "auto",
       loop: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
       loopFillGroupWithBlank: true,
       spaceBetween: 20,
             navigation: {

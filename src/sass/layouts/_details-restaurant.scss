@@ -231,8 +231,10 @@
     }
   }
 
-  &__swiper {
-    margin-bottom: 32px;
+  &__swiper{
+    @media screen and (max-width: 1023.98px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__swiper-container {
