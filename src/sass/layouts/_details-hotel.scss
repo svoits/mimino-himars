@@ -196,6 +196,8 @@
 .details-hotel-title {
   // margin-right: 125px;
   text-align: end;
+  line-height: calc(24 / 20);
+  font-size: 20px;
 }
 
 .details-hotel-text {
@@ -203,15 +205,15 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 1023.98px) {
-  .details-hotel .swiper-slide {
-    opacity: 0.6;
-  }
+// @media screen and (max-width: 1023.98px) {
+//   .details-hotel .swiper-slide {
+//     opacity: 0.6;
+//   }
 
-  .details-hotel .swiper-slide-active {
-    opacity: 1;
-  }
-}
+//   .details-hotel .swiper-slide-active {
+//     opacity: 1;
+//   }
+// }
 
 @media screen and (min-width: 1024px) {
   .details-hotel {
@@ -271,16 +273,16 @@
       max-width: 662px;
     }
 
-    .swiper {
-      margin-left: 0;
-      margin-right: 0;
-    }
+    // .swiper {
+    //   margin-left: 0;
+    //   margin-right: 0;
+    // }
 
-    .swiper-wrapper {
-      margin-bottom: 24px;
-      direction: rtl;
-      transform: translateX(35px) !important;
-    }
+    // .swiper-wrapper {
+    //   margin-bottom: 24px;
+    //   direction: rtl;
+    //   transform: translateX(35px) !important;
+    // }
 
     &-switchers {
       margin-bottom: 0;
@@ -329,13 +331,76 @@
       max-width: 100%;
     }
 
-    .swiper {
-      max-width: 874px;
-      margin-left: -35px;
-    }
+    // .swiper {
+    //   max-width: 874px;
+    //   margin-left: -35px;
+    // }
 
-    .swiper-wrapper {
-      transform: translateX(85px) !important;
-    }
+    // .swiper-wrapper {
+    //   transform: translateX(85px) !important;
+    // }
+  }
+}
+
+.details-hotel-wrapper {
+  transform: translateX(-15px);
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    transform: translateX(0);
+    margin-bottom: 0;
+  }
+}
+
+.details-hotel-gallery {
+  max-width: 384px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 662px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 842px;
+  }
+}
+
+.hotel-gallery-item {
+  margin-right: 20px;
+  transform: translateX(-67%);
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 34px;
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 70px;
+  }
+}
+
+.dh-arrows-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.dh-slider-arrows {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+}
+
+.dh-slick-prev-icon,
+.dh-slick-next-icon {
+  fill: $white;
+  transition: fill $transition, transform $transition;
+
+  &:hover {
+    fill: $main-accent-color;
+    transform: scale(1.1);
   }
 }

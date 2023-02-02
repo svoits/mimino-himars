@@ -11,7 +11,7 @@
 
   &--background {
     width: 100%;
-    max-width: 414px;
+
     margin: 0 auto;
 
     background-position: center;
@@ -32,7 +32,6 @@
     }
 
     @media screen and (min-width: 1024px) {
-      max-width: 1024px;
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -234,7 +233,7 @@
 }
 
 .details-restaurant-wrapper {
-  transform: translateX(25px);
+  transform: translateX(15px);
   margin-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
@@ -244,7 +243,7 @@
 }
 
 .details-restaurant-gallery {
-  max-width: 374px;
+  max-width: 384px;
   margin-bottom: 16px;
 
   @media screen and (min-width: 1024px) {
