@@ -3,6 +3,7 @@
   padding: 32px 0;
   background: $secondary-bg-color;
 
+<<<<<<< Updated upstream
   @media screen and (min-width: 1024px) {
     padding: 68px 0 40px;
   }
@@ -10,6 +11,67 @@
 
 .grand-suite .container {
   position: relative;
+=======
+.grand-suite {
+background-color: #FFFDEE;
+margin-top: 72px;
+
+
+
+.grand-suite-description {
+font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	/* identical to box height */
+
+
+	color: #B4B4B4;
+}
+
+.grand-suite-logo {
+font-family: 'Film P3';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 69px;
+	/* identical to box height */
+
+	letter-spacing: 0.3em;
+
+	color: #494848;
+}
+
+.grand-suite-title{
+font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 41px;
+	letter-spacing: 0.05em;
+
+	color: #000000;
+}
+
+.grand-suite-text {
+font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+
+	color: #7A7A7A;
+}
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 }
 
 .grand-suite {
