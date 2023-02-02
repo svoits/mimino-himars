@@ -255,7 +255,7 @@
     // }
 
     @media screen and (min-width: 1280px) {
-      width: 875px;
+      max-width: 842px;
     }
   }
 
@@ -313,11 +313,6 @@
 
   @media screen and (max-width: 1023.98px) {
     margin-right: -15px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    // width: 842px;
-    margin-right: -35px;
   }
 }
 
