@@ -1,28 +1,6 @@
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background-color: rgba(0, 0, 0, 0.2);
-//   transition-property: opacity;
-
-//   z-index: 100;
-//   //   display: none;
-// }
-
 .modal {
-  //   opacity: 1;
-  //   visibility: visible;
   opacity: 0;
   visibility: hidden;
-
-  //    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-  //    text-align: center;
-  //    padding: 30px;
-  //    border-radius: 3px;
-  //    background-color: #fff;
-  //    transition: 0.3s all;
 }
 
 .modal.active,
@@ -46,7 +24,9 @@
   background-color: #fffdee;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
     0 2px 1px rgb(0 0 0 / 20%);
 
@@ -80,7 +60,7 @@
   top: 16px;
   cursor: pointer;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover,
@@ -241,12 +221,13 @@
   border: 1px solid #f3c653;
   border-radius: 2px;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1024px) {
-      margin-top: 18px;
-      font-size: 24px;
-      line-height: 1.21;
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 1.21;
   }
 }
 
