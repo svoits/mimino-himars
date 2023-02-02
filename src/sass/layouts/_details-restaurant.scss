@@ -146,12 +146,13 @@
       flex-direction: row-reverse;
       flex-wrap: nowrap;
       align-items: flex-end;
-      gap: 28px;
+      justify-content: space-between;
+      // gap: 28px;
     }
 
-    @media screen and (min-width: 1280px) {
-      gap: 32px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //   gap: 32px;
+    // }
   }
 
   // btn-style
@@ -187,10 +188,6 @@
 
     border: 2px solid $white;
     border-radius: 25px;
-
-    // transition-duration: 250ms;
-    // transition-property: background-color border-color;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     transition: background-color $transition, border-color $transition,
       transform $transition;
@@ -236,32 +233,19 @@
   }
 
   &__swiper {
-    margin-bottom: 32px;
-    // margin-left: 25px;
-    width: 100%;
-
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-right: -35px;
+    @media screen and (max-width: 1023.98px) {
+      margin-bottom: 32px;
     }
   }
 
   &__swiper-container {
-    width: 375px;
+    max-width: 374px;
 
     @media screen and (min-width: 1024px) {
-      width: 662px;
-
-      overflow: hidden;
+      max-width: 662px;
     }
-
     @media screen and (min-width: 1280px) {
-      width: 875px;
+      max-width: 842px;
     }
   }
 
@@ -284,16 +268,10 @@
     }
   }
 
-  &__swiper-img {
-    max-width: 274px;
-  }
-
   &__swiper-btn {
     margin-top: 16px;
     display: flex;
     column-gap: 32px;
-
-    // margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
       margin-top: 24px;
@@ -302,14 +280,8 @@
 
   &__btn-svg {
     fill: $white;
-
-    // transition-duration: 250ms;
-    // transition-property: fill;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     transition: fill $transition, transform $transition;
 
-    // &:focus,
     &:hover {
       fill: $main-accent-color;
       transform: scale(1.1);
@@ -317,21 +289,21 @@
   }
 }
 
-.details-restaurant .swiper-slide {
-  width: auto !important;
-}
+.details-restaurant .swiper {
+  // width: 100%;
+  // height: 100%;
 
-.details-restaurant .swiper-wrapper {
   @media screen and (max-width: 1023.98px) {
-    transform: translate3d(-588px, 0px, 0px) !important;
+    margin-right: -15px;
   }
 
   @media screen and (min-width: 1024px) {
-    transform: translate3d(-1696px, 0px, 0px) !important;
+    margin-right: 0;
   }
-  @media screen and (min-width: 1280px) {
-    transform: translate3d(-960px, 0px, 0px) !important;
-  }
+}
+
+.details-restaurant .swiper-slide {
+  width: auto;
 }
 
 .details-restaurant__prev,

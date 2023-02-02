@@ -1,4 +1,5 @@
 .classic-suite {
+  min-width: 320px;
   padding: 32px 0;
   background: $main-bg-color;
 
@@ -164,7 +165,7 @@
   max-width: 284px;
 
   @media screen and (max-width: 1023px) {
-    margin-left: -15px;
+    margin-right: -15px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -246,11 +247,11 @@
   border-radius: 2px;
 
   overflow: hidden;
-  transform: translateX(-15px);
+  // transform: translateX(-15px);
 
   @media screen and (min-width: 1024px) {
     max-width: 428px;
-    transform: translateX(0);
+    // transform: translateX(0);
   }
   @media screen and (min-width: 1280px) {
     bottom: -147px;
@@ -276,8 +277,8 @@
 
 .classic-arrow-list {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
   gap: 32px;
   margin-left: 15px;
   margin-top: 20px;

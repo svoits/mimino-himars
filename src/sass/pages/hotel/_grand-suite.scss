@@ -1,4 +1,5 @@
 .grand-suite {
+  min-width: 320px;
   padding: 32px 0;
   background: $main-bg-color;
 
@@ -112,6 +113,7 @@
   }
 
   &-btn {
+    cursor: pointer;
     width: 236px;
     padding: 12px 34px;
 
@@ -122,12 +124,16 @@
     color: $main-accent-color;
     background: $black;
 
-    border: 2px solid $accent-text-color;
+    border: 2px solid $secondary-bg-color;
     border-radius: 25px;
+    transition: background-color $transition, border-color $transition,
+      transform $transition;
 
     &:hover,
     &:focus {
       background: $white;
+      border-color: $main-accent-color;
+      transform: scale(1.1);
     }
   }
 
@@ -195,8 +201,8 @@
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 5px;
+    // margin-left: 0;
+    // margin-right: 5px;
   }
 }
 
@@ -238,11 +244,11 @@
   border-radius: 2px;
 
   overflow: hidden;
-  transform: translateX(-15px);
+  // transform: translateX(-15px);
 
   @media screen and (min-width: 1024px) {
     max-width: 428px;
-    transform: translateX(0);
+    // transform: translateX(0);
   }
   @media screen and (min-width: 1280px) {
     bottom: -147px;

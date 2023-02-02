@@ -42,13 +42,19 @@
     <!-- Base styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Base JS -->
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header" id="header">
       <include src="./partials/header.html"></include>
     </header>
 
@@ -67,9 +73,18 @@
       <include src="./partials/footer.html"></include>
     </footer>
 
+    <!-- scroll to top -->
+    <include src="./partials/components/scroll-up.html"></include>
+
+    <!-- Modal windows -->
+    <include src="./partials/modals/book-table.html"></include>
+    <include src="./partials/modals/book-room.html"></include>
+
+    <!-- overlay for modal windows -->
+    <div class="overlay js-overlay-modal"></div>
+
     <!-- JS  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <script src="./js/ar-swiper.js"></script>
     <script src="./js/dr-swiper.js"></script>
     <script src="./js/ah-swiper.js"></script>
