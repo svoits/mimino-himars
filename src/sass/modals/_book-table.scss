@@ -15,23 +15,29 @@
   left: 50%;
   z-index: 102;
 
-  width: 414px;
-  max-height: 98%;
+  width: 94%;
+  max-width: 414px;
+  max-height: 96%;
+  overflow: auto;
 
   margin-left: auto;
   margin-right: auto;
 
   background-color: #fffdee;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: opacity 500ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    visibility 500ms cubic-bezier(0.65, 0.05, 0.36, 1),
+    transform 500ms cubic-bezier(0.65, 0.05, 0.36, 1);
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
     0 2px 1px rgb(0 0 0 / 20%);
 
   @media screen and (min-width: 1024px) {
-    width: 712px;
+    max-width: 712px;
+  }
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -59,26 +65,30 @@
   right: 16px;
   top: 16px;
   cursor: pointer;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke $transition, stroke-width $transition,
+    transform $transition;
 }
 
 .modal-icon:hover,
 .modal-icon:focus {
   stroke: #c79002;
   stroke-width: 5px;
+  transform: scale(1.1);
 }
 
 .select-icon {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 15px;
+  right: 15px;
   width: 24px;
   height: 24px;
   fill: #c79002;
 
   z-index: 999;
   pointer-events: none;
+  @media screen and (min-width: 1024px) {
+    top: 20px;
+  }
 }
 
 .icon-calendate {
@@ -86,7 +96,6 @@
 }
 
 .book-table-modal__container {
-  width: 414px;
   padding: 60px 15px;
 
   @media screen and (min-width: 1024px) {
@@ -117,7 +126,12 @@
   text-transform: uppercase;
 
   color: #000000;
-
+  @media screen and (max-width: 390px) {
+    font-size: 6.1vw;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 19.5px;
+  }
   @media screen and (min-width: 1024px) {
     font-size: 40px;
     line-height: 1.15;
@@ -129,6 +143,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 28px;
+  }
+}
+
+.last-form-field {
+  margin-bottom: 0;
 }
 
 .form-book-table {
@@ -159,7 +180,7 @@
   font-family: 'Times New Roman';
 
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -170,18 +191,30 @@
   border-radius: 2px;
   outline: 0px solid #c79002;
 
-  transform: outline, border;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline $transition;
+  transition-duration: 125ms;
+
+  &::placeholder,
+  & {
+    font-size: 24px;
+
+    @media screen and (max-width: 413.98px) {
+      font-size: 5.7vw;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 18.25px;
+    }
+  }
 
   @media screen and (min-width: 1024px) {
-    width: 286px;
+    width: 288px;
+    height: 64px;
   }
 }
 
 .form-book-table__input:focus,
 .form-book-table__input:hover {
-  outline: 2px solid #c79002;
+  outline: 2px solid $accent-text-color;
 }
 
 .form-book-table__input:focus + .select-icon,
@@ -193,7 +226,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: #c79002;
@@ -201,6 +234,9 @@
   padding-left: 12px;
   margin-top: 8px;
   text-align: left;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 .form-button {
@@ -208,7 +244,7 @@
   margin: 0 auto;
   width: 100%;
 
-  padding: 20px;
+  padding: 19px;
 
   font-style: normal;
   cursor: pointer;
@@ -218,21 +254,35 @@
   line-height: 1.22;
   letter-spacing: 0em;
   background-color: #000000;
-  border: 1px solid #f3c653;
+  border: 1px solid $main-accent-color;
   border-radius: 2px;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition, color $transition,
+    transform $transition;
 
+  @media screen and (max-width: 396px) {
+    font-size: 4.9vw;
+  }
+  @media screen and (max-width: 336px) {
+    font-size: 4.6vw;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 15.2px;
+  }
   @media screen and (min-width: 1024px) {
-    margin-top: 18px;
+    // margin-top: 18px;
     font-size: 24px;
     line-height: 1.21;
+    padding: 17px;
   }
 }
 
 .form-button:hover,
 .form-button:focus {
-  color: #000;
-  background-color: #f3c653;
+  color: $black;
+  background-color: $main-accent-color;
+  transform: scale(1.05);
+  @media screen and (min-width: 1024px) {
+    transform: scale(1.025);
+  }
 }
