@@ -1,2 +1,0 @@
-$(".details-restaurant-gallery").slick({infinite:!0,speed:300,slidesToShow:3,variableWidth:!0,autoplay:!0,autoplaySpeed:2e3,arrows:!0,prevArrow:".slick-prev",nextArrow:".slick-next",responsive:[{breakpoint:1280,settings:{centerPadding:"40px",slidesToShow:3}},{breakpoint:480,settings:{centerPadding:"40px",slidesToShow:1.5}}]}),$(".center").slick({centerMode:!0,centerPadding:"60px",slidesToShow:3});
-//# sourceMappingURL=index.3ee2daf0.js.map
