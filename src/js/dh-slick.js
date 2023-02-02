@@ -1,4 +1,4 @@
-$('.details-restaurant-gallery').slick({
+$('.details-hotel-gallery').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 3,
@@ -6,8 +6,8 @@ $('.details-restaurant-gallery').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
-  prevArrow: '.dr-slick-prev',
-  nextArrow: '.dr-slick-next',
+  prevArrow: '.dh-slick-prev',
+  nextArrow: '.dh-slick-next',
 
   responsive: [
     {
