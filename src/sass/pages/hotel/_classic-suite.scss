@@ -1,4 +1,5 @@
 .classic-suite {
+  min-width: 320px;
   padding: 32px 0;
   background: $main-bg-color;
 
@@ -164,7 +165,7 @@
   max-width: 284px;
 
   @media screen and (max-width: 1023px) {
-    margin-left: -15px;
+    margin-right: -15px;
   }
 
   @media screen and (min-width: 1024px) {

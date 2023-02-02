@@ -1,4 +1,5 @@
 .grand-suite {
+  min-width: 320px;
   padding: 32px 0;
   background: $main-bg-color;
 
@@ -200,8 +201,8 @@
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 5px;
+    // margin-left: 0;
+    // margin-right: 5px;
   }
 }
 
