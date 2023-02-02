@@ -1,6 +1,5 @@
 .details-hotel {
   min-width: 320px;
-  max-width: 414px;
 
   padding-top: 24px;
   padding-bottom: 40px;
@@ -219,7 +218,6 @@
 @media screen and (min-width: 1024px) {
   .details-hotel {
     padding-top: 48px;
-    max-width: 1024px;
 
     background-image: linear-gradient($details-bg-color, $details-bg-color),
       url(../images/homepage/details-hotel/details-bg-tablet.jpg);
