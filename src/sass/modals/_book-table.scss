@@ -97,7 +97,14 @@
 
 .book-table-modal__container {
   padding: 60px 15px;
-
+  @media screen and (max-width: 413.98px) {
+    padding-top: 14vw;
+    padding-bottom: 14vw;
+  }
+  @media screen and (max-width: 320px) {
+    padding-top: 44.8px;
+    padding-bottom: 44.8px;
+  }
   @media screen and (min-width: 1024px) {
     padding: 60px 60px;
     width: 712px;
@@ -125,12 +132,17 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #000000;
+  color: $black;
+  @media screen and (max-width: 413.98px) {
+    margin-bottom: 9.6vw;
+  }
   @media screen and (max-width: 390px) {
     font-size: 6.1vw;
   }
+
   @media screen and (max-width: 320px) {
     font-size: 19.5px;
+    margin-bottom: 31px;
   }
   @media screen and (min-width: 1024px) {
     font-size: 40px;
@@ -180,7 +192,7 @@
   font-family: 'Times New Roman';
 
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -196,17 +208,16 @@
 
   &::placeholder,
   & {
-    font-size: 24px;
-
     @media screen and (max-width: 413.98px) {
-      font-size: 5.7vw;
+      font-size: 4.8vw;
     }
-    @media screen and (max-width: 320px) {
-      font-size: 18.25px;
+    @media screen and (max-width: 355px) {
+      font-size: 17px;
     }
   }
 
   @media screen and (min-width: 1024px) {
+    font-size: 24px;
     width: 288px;
     height: 64px;
   }
