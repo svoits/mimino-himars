@@ -146,12 +146,13 @@
       flex-direction: row-reverse;
       flex-wrap: nowrap;
       align-items: flex-end;
-      gap: 28px;
+      justify-content: space-between;
+      // gap: 28px;
     }
 
-    @media screen and (min-width: 1280px) {
-      gap: 32px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //   gap: 32px;
+    // }
   }
 
   // btn-style
@@ -231,14 +232,18 @@
     }
   }
 
-  &__swiper{
+  &__swiper {
     @media screen and (max-width: 1023.98px) {
       margin-bottom: 32px;
     }
-    
   }
 
   &__swiper-container {
+    max-width: 374px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 662px;
+    }
     @media screen and (min-width: 1280px) {
       max-width: 842px;
     }
@@ -263,7 +268,6 @@
     }
   }
 
-
   &__swiper-btn {
     margin-top: 16px;
     display: flex;
@@ -285,16 +289,16 @@
   }
 }
 
-.swiper-slide {
-  width: auto;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
+.details-restaurant .swiper {
+  // width: 100%;
+  // height: 100%;
 
   @media screen and (max-width: 1023.98px) {
     margin-right: -15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 0;
   }
 }
 
