@@ -238,27 +238,21 @@
   &__swiper {
     margin-bottom: 32px;
     // margin-left: 25px;
-    width: 100%;
 
-    @media screen and (min-width: 1024px) {
-      margin-bottom: 0;
-      position: relative;
-      overflow: hidden;
-    }
+    // @media screen and (min-width: 1024px) {
+    //   margin-bottom: 0;
+    //   position: relative;
+    //   overflow: hidden;
+    // }
 
-    @media screen and (min-width: 1280px) {
-      margin-right: -35px;
-    }
   }
 
   &__swiper-container {
-    width: 375px;
+    // width: 375px;
 
-    @media screen and (min-width: 1024px) {
-      width: 662px;
-
-      overflow: hidden;
-    }
+    // @media screen and (min-width: 1024px) {
+    //   width: 662px;
+    // }
 
     @media screen and (min-width: 1280px) {
       width: 875px;
@@ -284,9 +278,6 @@
     }
   }
 
-  &__swiper-img {
-    max-width: 274px;
-  }
 
   &__swiper-btn {
     margin-top: 16px;
@@ -302,11 +293,6 @@
 
   &__btn-svg {
     fill: $white;
-
-    // transition-duration: 250ms;
-    // transition-property: fill;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     transition: fill $transition, transform $transition;
 
     // &:focus,
@@ -317,21 +303,26 @@
   }
 }
 
-.details-restaurant .swiper-slide {
-  width: auto !important;
+.swiper-slide {
+  width: auto;
 }
 
-.details-restaurant .swiper-wrapper {
+.swiper {
+  width: 100%;
+  height: 100%;
+
   @media screen and (max-width: 1023.98px) {
-    transform: translate3d(-588px, 0px, 0px) !important;
+    margin-right: -15px;
   }
 
-  @media screen and (min-width: 1024px) {
-    transform: translate3d(-1696px, 0px, 0px) !important;
-  }
   @media screen and (min-width: 1280px) {
-    transform: translate3d(-960px, 0px, 0px) !important;
+    // width: 842px;
+    margin-right: -35px;
   }
+}
+
+.details-restaurant .swiper-slide {
+  width: auto;
 }
 
 .details-restaurant__prev,

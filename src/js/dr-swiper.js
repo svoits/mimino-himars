@@ -1,25 +1,19 @@
-var swiper = new Swiper('.details-restaurant__swiper-container', {
-  slidesPerView: 1.25,
-  spaceBetween: 20,
-
-  breakpoints: {
-    414: {
-      slidesPerView: 1.25,
+var swiper = new Swiper(".details-restaurant__swiper-container", {
+      slidesPerView: "auto",
+      loop: true,
+      loopFillGroupWithBlank: true,
       spaceBetween: 20,
-    },
+            navigation: {
+      nextEl: '.details-restaurant__next',
+      prevEl: '.details-restaurant__prev',
+      },
+             breakpoints: {
+//     // when window width is >= 1024px
     1024: {
-      slidesPerView: 2.25,
       spaceBetween: 34,
     },
     1280: {
-      slidesPerView: 3,
       spaceBetween: 86,
     },
   },
-  loop: true,
-
-  navigation: {
-    nextEl: '.details-restaurant__next',
-    prevEl: '.details-restaurant__prev',
-  },
-});
+    });
