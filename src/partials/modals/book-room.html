@@ -1,0 +1,87 @@
+<div class="modal book-room-modal" data-modal="2">
+  <button class="book-room-btn-close" type="button" data-modal-close-table>
+    <svg class="book-room-close-icon js-modal-close" width="18" height="18">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="book-room-modal__container">
+    <p class="book-room-modal__title">ЗАБРОНЮВАТИ НОМЕР</p>
+    <form class="form-book-room">
+      <div class="form-wrapper">
+        <div class="room-form-field">
+          <input
+            name="user-name"
+            id="user-name"
+            class="form-room-input"
+            type="text"
+            pattern="([a-zA-Zа-яА-Я]+)"
+            placeholder="Ваше ім'я"
+            required=""
+          />
+          <label class="form-room-label" for="user-name"
+            >На кого забронювати номер?</label
+          >
+        </div>
+        <div class="room-form-field">
+          <input
+            name="user-phone"
+            id="user-phone"
+            class="form-room-input"
+            type="tel"
+            pattern="[+]\d{2}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}"
+            title="+38 (___) ___-__-__"
+            placeholder="+38 (___) ___-__-__"
+            required=""
+          />
+          <label class="form-room-label" for="user-phone">Номер телефону</label>
+        </div>
+      </div>
+      <div class="form-wrapper second-wrapper">
+        <div class="room-form-field">
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-in" id="date-in">
+              <option value="grand" selected="">Двомісний люкс</option>
+              <option value="large">Трьохмісний</option>
+              <option value="classic">Двомісний</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <label class="form-room-label" for="date-in">Дата заїзду</label>
+        </div>
+      </div>
+      <div class="form-wrapper">
+        <div class="room-form-field">
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-in" id="date-in">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+
+          <label class="form-room-label" for="date-in">Дата заїзду</label>
+        </div>
+        <div class="room-form-field">
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-out" id="date-out">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+
+          <label class="form-room-label" for="date-out">Дата виїзду</label>
+        </div>
+      </div>
+      <button type="submit" class="modal-form-submit">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
