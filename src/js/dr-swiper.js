@@ -9,7 +9,7 @@ var swiper = new Swiper(".details-restaurant__swiper-container", {
       nextEl: '.details-restaurant__next',
       prevEl: '.details-restaurant__prev',
       },
-             breakpoints: {
+     breakpoints: {
 //     // when window width is >= 1024px
     1024: {
       spaceBetween: 34,
