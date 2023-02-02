@@ -10,6 +10,9 @@
 
   width: 40px;
   height: 64px;
+  @media screen and (max-width: 559.98px) {
+    display: none;
+  }
 
   &__link {
     display: flex;
