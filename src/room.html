@@ -49,12 +49,18 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Base JS -->
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header room-header">
+    <header class="page-header room-header" id="header">
       <include src="./partials/header.html"></include>
     </header>
 
@@ -68,6 +74,9 @@
     <footer>
       <include src="./partials/footer.html"></include>
     </footer>
+
+    <!-- scroll to top -->
+    <include src="./partials/components/scroll-up.html"></include>
 
     <!-- JS -->
     <script
