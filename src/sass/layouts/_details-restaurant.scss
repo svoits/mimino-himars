@@ -258,9 +258,16 @@
 
 .restaurant-gallery-item {
   margin-right: 20px;
+  opacity: 0.6;
+
+  &.slick-active {
+    opacity: 1;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-right: 34px;
+    transform: translateX(0);
+    opacity: 1;
   }
 
   @media screen and (min-width: 1280px) {

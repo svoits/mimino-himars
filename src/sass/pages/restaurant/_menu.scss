@@ -2,6 +2,8 @@
   min-width: 320px;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin: 0 auto;
+
   background-color: $secondary-bg-color;
   color: $black;
   @media screen and (min-width: 1024px) {

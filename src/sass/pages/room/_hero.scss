@@ -112,27 +112,6 @@
   transition: transform $transition;
 }
 
-.section-hero {
-  padding-top: 180px;
-  padding-bottom: 104px;
-  @media screen and (min-width: 1024px) {
-    padding-top: 188px;
-    padding-bottom: 64px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 164px;
-  }
-
-  background-position: center;
-  background-size: cover;
-
-  min-width: 320px;
-  max-width: 1280px;
-  margin: 0 auto;
-
-  // z-index: -1;
-}
-
 .hero-container {
   position: relative;
 }

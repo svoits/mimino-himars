@@ -13,7 +13,7 @@ $('.details-hotel-gallery').slick({
     {
       breakpoint: 414,
       settings: {
-        slidesToShow: 1.2,
+        slidesToShow: 1.5,
         useTransform: true,
       },
     },
