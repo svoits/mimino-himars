@@ -18,7 +18,6 @@
             placeholder="Ваше ім'я"
             required=""
           />
-
           <label class="form-room-label" for="user-name"
             >На кого забронювати номер?</label
           >
@@ -37,37 +36,46 @@
           <label class="form-room-label" for="user-phone">Номер телефону</label>
         </div>
       </div>
-      <div class="form-wrapper">
+      <div class="form-wrapper second-wrapper">
         <div class="room-form-field">
-          <select class="form-room-input" name="date-in" id="date-in">
-            <option value="today" selected="">Сьогодні</option>
-            <option value="tomorrow">Завтра</option>
-          </select>
-          <svg class="form-room-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-arrow-down"></use>
-          </svg>
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-in" id="date-in">
+              <option value="grand" selected="">Двомісний люкс</option>
+              <option value="large">Трьохмісний</option>
+              <option value="classic">Двомісний</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
           <label class="form-room-label" for="date-in">Дата заїзду</label>
         </div>
       </div>
       <div class="form-wrapper">
         <div class="room-form-field">
-          <select class="form-room-input" name="date-in" id="date-in">
-            <option value="today" selected="">Сьогодні</option>
-            <option value="tomorrow">Завтра</option>
-          </select>
-          <svg class="form-room-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-arrow-down"></use>
-          </svg>
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-in" id="date-in">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+
           <label class="form-room-label" for="date-in">Дата заїзду</label>
         </div>
         <div class="room-form-field">
-          <select class="form-room-input" name="date-out" id="date-out">
-            <option value="today" selected="">Сьогодні</option>
-            <option value="tomorrow">Завтра</option>
-          </select>
-          <svg class="form-room-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-arrow-down"></use>
-          </svg>
+          <div class="room-form-wrap">
+            <select class="form-room-input" name="date-out" id="date-out">
+              <option value="today" selected="">Сьогодні</option>
+              <option value="tomorrow">Завтра</option>
+            </select>
+            <svg class="form-room-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+
           <label class="form-room-label" for="date-out">Дата виїзду</label>
         </div>
       </div>
