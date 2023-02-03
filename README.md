@@ -1,6 +1,6 @@
 # Presentation and acknowledgements
-Video presentation of the project: https://youtu.be/pQhVorEKQsY
-Thanks to the whole team for your great work and persistence!
+- Video presentation of the project: https://youtu.be/pQhVorEKQsY
+- Thanks to the whole team for your great work and persistence!
 
 # Parcel template
 
