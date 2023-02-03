@@ -350,7 +350,8 @@
   margin-right: auto;
   @media screen and (min-width: 414px) {
     max-width: 384px;
-    margin-left: 0;
+
+    margin-right: 0;
     transform: translateX(-15px);
   }
 
