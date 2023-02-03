@@ -9,13 +9,13 @@ $('.details-hotel-gallery').slick({
   prevArrow: '.dh-slick-prev',
   nextArrow: '.dh-slick-next',
 
-  responsive: [
-    {
-      breakpoint: 414,
-      settings: {
-        slidesToShow: 1.5,
-        useTransform: true,
-      },
-    },
-  ],
+  // responsive: [
+  //   {
+  //     breakpoint: 414,
+  //     settings: {
+  //       slidesToShow: 1.5,
+  //       useTransform: true,
+  //     },
+  //   },
+  // ],
 });

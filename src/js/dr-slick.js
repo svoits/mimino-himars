@@ -9,13 +9,13 @@ $('.details-restaurant-gallery').slick({
   prevArrow: '.dr-slick-prev',
   nextArrow: '.dr-slick-next',
 
-  responsive: [
-    {
-      breakpoint: 414,
-      settings: {
-        slidesToShow: 1.5,
-        useTransform: true,
-      },
-    },
-  ],
+  // responsive: [
+  //   {
+  //     breakpoint: 414,
+  //     settings: {
+  //       slidesToShow: 1.5,
+  //       useTransform: true,
+  //     },
+  //   },
+  // ],
 });
