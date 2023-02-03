@@ -56,6 +56,8 @@
   .contacts-text {
     margin-top: 16px;
     margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -225,12 +227,12 @@
   }
 }
 
-@media screen and (max-width: 319.98px) {
-  .contacts-wrapper.geo {
-    // margin-left: 0;
-    // margin-top: 16px;
-  }
-}
+// @media screen and (max-width: 319.98px) {
+//   .contacts-wrapper.geo {
+//     // margin-left: 0;
+//     // margin-top: 16px;
+//   }
+// }
 
 @media screen and (min-width: 1024px) {
   .contacts-wrapper.geo {
