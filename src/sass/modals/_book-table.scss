@@ -43,6 +43,7 @@
 }
 
 .btn-close {
+  padding: 0;
   width: 24px;
   height: 24px;
   fill: #000000;
@@ -60,11 +61,11 @@
 .modal-icon {
   stroke: #0e0c07;
   stroke-width: 2px;
-  position: absolute;
+  // position: absolute;
   width: 24px;
   height: 24px;
-  right: 16px;
-  top: 16px;
+  // right: 16px;
+  // top: 16px;
   cursor: pointer;
   transition: stroke $transition, stroke-width $transition,
     transform $transition;
