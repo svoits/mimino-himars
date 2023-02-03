@@ -344,13 +344,14 @@
 }
 
 .details-hotel-wrapper {
-  transform: translateX(-15px);
   margin-bottom: 32px;
   max-width: 274px;
-  margin-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 414px) {
     max-width: 384px;
     margin-left: 0;
+    transform: translateX(-15px);
   }
 
   @media screen and (min-width: 1024px) {
