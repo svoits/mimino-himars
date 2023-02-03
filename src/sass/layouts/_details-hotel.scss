@@ -4,6 +4,7 @@
   padding-top: 24px;
   padding-bottom: 40px;
   margin: 0 auto;
+  width: 100%;
 
   background-color: $black;
   background-image: linear-gradient($details-bg-color, $details-bg-color),
@@ -343,22 +344,20 @@
 }
 
 .details-hotel-wrapper {
-  transform: translateX(-15px);
   margin-bottom: 32px;
+  max-width: 274px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 414px) {
+    max-width: 384px;
+    margin-left: 0;
+    transform: translateX(-15px);
+  }
 
   @media screen and (min-width: 1024px) {
     transform: translateX(0);
     margin-bottom: 0;
-  }
-}
-
-.details-hotel-gallery {
-  max-width: 384px;
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 1024px) {
     max-width: 662px;
-    margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -366,13 +365,33 @@
   }
 }
 
+.details-hotel-gallery {
+  // max-width: 274px;
+  margin-bottom: 16px;
+  // @media screen and (min-width: 414px) {
+  //   max-width: 384px;
+  // }
+  @media screen and (min-width: 1024px) {
+    // max-width: 662px;
+    margin-bottom: 24px;
+  }
+
+  // @media screen and (min-width: 1280px) {
+  //   max-width: 842px;
+  // }
+}
+
 .hotel-gallery-item {
   margin-right: 20px;
-  transform: translateX(40%);
+  // transform: translateX(15px);
   opacity: 0.6;
 
   &.slick-current {
     opacity: 1;
+  }
+
+  @media screen and (min-width: 414px) {
+    transform: translateX(40%);
   }
 
   @media screen and (min-width: 1024px) {
